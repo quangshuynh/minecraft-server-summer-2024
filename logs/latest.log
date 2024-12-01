@@ -1,0 +1,152 @@
+[13:48:58] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\AngelChest-11.1.3.jar'...
+[13:48:58] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Remapping plugin 'plugins\ChatItem-2.5.1.jar'...
+[13:48:58] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Remapping plugin 'plugins\GSit-1.9.1.jar'...
+[13:48:58] [Paper Plugin Remapper Thread - 0/INFO]: [PluginRemapper] Remapping plugin 'plugins\veinminer-bukkit-2.2.4.jar'...
+[13:48:58] [Paper Plugin Remapper Thread - 0/INFO]: [PluginRemapper] Done remapping plugin 'plugins\veinminer-bukkit-2.2.4.jar' in 307ms.
+[13:48:58] [Paper Plugin Remapper Thread - 0/INFO]: [PluginRemapper] Remapping plugin 'plugins\worldedit-bukkit-7.3.3.jar'...
+[13:48:58] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Done remapping plugin 'plugins\GSit-1.9.1.jar' in 368ms.
+[13:48:59] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\AngelChest-11.1.3.jar' in 632ms.
+[13:48:59] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Done remapping plugin 'plugins\ChatItem-2.5.1.jar' in 658ms.
+[13:48:59] [Paper Plugin Remapper Thread - 0/INFO]: [PluginRemapper] Done remapping plugin 'plugins\worldedit-bukkit-7.3.3.jar' in 648ms.
+[13:49:02] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[13:49:03] [ServerMain/INFO]: Loaded 1175 recipes
+[13:49:03] [ServerMain/INFO]: Loaded 1276 advancements
+[13:49:03] [Server thread/INFO]: Starting minecraft server version 1.20.6
+[13:49:03] [Server thread/INFO]: Loading properties
+[13:49:04] [Server thread/INFO]: This server is running Paper version 1.20.6-151-ver/1.20.6@a4f0f5c (2024-10-30T19:13:22Z) (Implementing API version 1.20.6-R0.1-SNAPSHOT)
+[13:49:04] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:49:04] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:49:04] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[13:49:04] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
+[13:49:05] [Server thread/INFO]: Default game type: SURVIVAL
+[13:49:05] [Server thread/INFO]: Generating keypair
+[13:49:05] [Server thread/INFO]: Starting Minecraft server on *:25565
+[13:49:05] [Server thread/INFO]: Using default channel type
+[13:49:05] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[13:49:05] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[13:49:05] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'ChatItem-2.5.1.jar' in folder 'plugins\.paper-remapped'
+org.bukkit.plugin.InvalidPluginException: Exception initializing main class `me.dadus33.chatitem.ChatItem'
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:106) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:125) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:532) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:286) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1136) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:98) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	... 10 more
+Caused by: java.lang.ExceptionInInitializerError
+	at ChatItem-2.5.1.jar/me.dadus33.chatitem.ChatItem.<init>(ChatItem.java:47) ~[ChatItem-2.5.1.jar:?]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:98) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	... 10 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at ChatItem-2.5.1.jar/me.dadus33.chatitem.utils.Version.<clinit>(Version.java:39) ~[ChatItem-2.5.1.jar:?]
+	at ChatItem-2.5.1.jar/me.dadus33.chatitem.ChatItem.<init>(ChatItem.java:47) ~[ChatItem-2.5.1.jar:?]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:98) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	... 10 more
+[13:49:05] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.0-dev+144-d31ff55
+[13:49:05] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
+[13:49:06] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@1593d33f]
+[13:49:06] [Server thread/INFO]: [VeinMiner] Loading server plugin VeinMiner v2.2.4
+[13:49:06] [Server thread/INFO]: [GSit] Loading server plugin GSit v1.9.1
+[13:49:06] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.21.0-dev+144-d31ff55
+[13:49:06] [Server thread/INFO]: [AngelChest] Loading server plugin AngelChest v11.1.3
+[13:49:06] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
+[13:49:06] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[13:49:06] [Server thread/INFO]: WEPIF: Updated config file
+[13:49:06] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[13:49:06] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
+[13:49:07] [Server thread/INFO]: Preparing level "world"
+[13:49:08] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[13:49:08] [Server thread/INFO]: Time elapsed: 388 ms
+[13:49:08] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[13:49:08] [Server thread/INFO]: Time elapsed: 92 ms
+[13:49:08] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[13:49:08] [Server thread/INFO]: Time elapsed: 35 ms
+[13:49:08] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.0-dev+144-d31ff55
+[13:49:08] [Server thread/WARN]: [Essentials] Beginning Adventure locale file conversion.
+[13:49:09] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[13:49:09] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[13:49:09] [Server thread/INFO]: [Essentials] Done converting random teleport config.
+[13:49:09] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
+[13:49:09] [Server thread/INFO]: [Essentials] Using locale en_US
+[13:49:09] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[13:49:09] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[13:49:09] [Server thread/INFO]: [Essentials] Using config file enhanced permissions.
+[13:49:09] [Server thread/INFO]: [Essentials] Permissions listed in as player-commands will be given to all users.
+[13:49:09] [Server thread/INFO]: [VeinMiner] Enabling VeinMiner v2.2.4
+[13:49:09] [Server thread/INFO]: [VeinMiner] Loading configuration options to local memory
+[13:49:09] [Server thread/INFO]: [VeinMiner] Added 13 aliases.
+[13:49:09] [Server thread/INFO]: [VeinMiner] Registered category with id "Axe" holding 6 unique items and 26 unique blocks.
+[13:49:09] [Server thread/INFO]: [VeinMiner] Registered category with id "Hoe" holding 6 unique items and 10 unique blocks.
+[13:49:09] [Server thread/INFO]: [VeinMiner] Registered category with id "Pickaxe" holding 6 unique items and 25 unique blocks.
+[13:49:09] [Server thread/INFO]: [VeinMiner] Registered category with id "Shears" holding 1 unique items and 27 unique blocks.
+[13:49:09] [Server thread/INFO]: [VeinMiner] Registered category with id "Shovel" holding 6 unique items and 9 unique blocks.
+[13:49:09] [Server thread/WARN]: [VeinMiner] No block list configured for category with id "Hand"! Is this intentional?
+[13:49:09] [Server thread/INFO]: [VeinMiner] Registered category with id "Hand" holding 0 unique items and 0 unique blocks.
+[13:49:09] [Server thread/INFO]: [VeinMiner] Performing an update check!
+[13:49:09] [Server thread/INFO]: [VeinMiner] Registering commands
+[13:49:09] [Server thread/INFO]: [VeinMiner] Registering events
+[13:49:09] [Server thread/INFO]: [VeinMiner] Vault not found. Economy support suspended
+[13:49:09] [Server thread/INFO]: [VeinMiner] Enabling Plugin Metrics
+[13:49:09] [Server thread/INFO]: [VeinMiner] Thanks for enabling Metrics! The anonymous stats are appreciated
+[13:49:09] [Server thread/INFO]: [GSit] Enabling GSit v1.9.1
+[13:49:09] [ForkJoinPool.commonPool-worker-1/INFO]: [VeinMiner] Using SQLITE for persistent storage.
+[13:49:09] [Server thread/INFO]: [GSit] The plugin was successfully enabled.
+[13:49:09] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.21.0-dev+144-d31ff55
+[13:49:09] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[13:49:09] [Server thread/INFO]: [AngelChest] Enabling AngelChest v11.1.3
+[13:49:09] [Server thread/INFO]: [AngelChest] groups.yml does not exist, skipping custom group settings.
+[13:49:09] [Server thread/INFO]: [AngelChest] blacklist.yml does not exist, disabling item blacklist.
+[13:49:09] [Server thread/INFO]: [AngelChest] Not using premium version, disabling Graveyards feature
+[13:49:09] [Server thread/INFO]: [AngelChest] Vault not installed, disabling economy functions.
+[13:49:09] [Server thread/INFO]: [AngelChest] [ACF] Enabled Asynchronous Tab Completion Support!
+[13:49:09] [Server thread/INFO]: [AngelChest] Successfully enabled AngelChest v11.1.3 (Premium: false)
+[13:49:09] [Server thread/INFO]: Running delayed init tasks
+[13:49:09] [Server thread/INFO]: Done (5.870s)! For help, type "help"
+[13:49:09] [Server thread/INFO]: Timings Reset
+[13:49:09] [Craft Scheduler Thread - 2 - Essentials/INFO]: [Essentials] Fetching version information...
+[13:49:09] [ForkJoinPool.commonPool-worker-1/INFO]: [VeinMiner] You are on the latest version of VeinMiner.
+[13:49:11] [Server thread/WARN]: [AngelChest] ***************************************************
+[13:49:11] [Server thread/WARN]: [AngelChest] * There is a new version of AngelChest available!
+[13:49:11] [Server thread/WARN]: [AngelChest] *  
+[13:49:11] [Server thread/WARN]: [AngelChest] * Your version:   §c11.1.3
+[13:49:11] [Server thread/WARN]: [AngelChest] * Latest version: §a13.9.0
+[13:49:11] [Server thread/WARN]: [AngelChest] *  
+[13:49:11] [Server thread/WARN]: [AngelChest] * Please update to the newest version.
+[13:49:11] [Server thread/WARN]: [AngelChest] *  
+[13:49:11] [Server thread/WARN]: [AngelChest] * Download (Plus):
+[13:49:11] [Server thread/WARN]: [AngelChest] *   https://www.spigotmc.org/resources/88214
+[13:49:11] [Server thread/WARN]: [AngelChest] *  
+[13:49:11] [Server thread/WARN]: [AngelChest] * Download (Free):
+[13:49:11] [Server thread/WARN]: [AngelChest] *   https://www.spigotmc.org/resources/60383
+[13:49:11] [Server thread/WARN]: [AngelChest] ***************************************************
+[13:49:12] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /help 
+[13:49:12] [Server thread/INFO]: To view help from the console, type '?'.
+[13:49:12] [Server thread/INFO]: [AngelChest] ========================================================
+[13:49:12] [Server thread/INFO]: [AngelChest] You are using the free version of AngelChest. There is
+[13:49:12] [Server thread/INFO]: [AngelChest] also a premium version available, called AngelChestPlus.
+[13:49:12] [Server thread/INFO]: [AngelChest] It includes TONS of new features and exclusive Discord
+[13:49:12] [Server thread/INFO]: [AngelChest] support. The free version will still receive bugfixes,
+[13:49:12] [Server thread/INFO]: [AngelChest] but there won't be ANY new features!
+[13:49:12] [Server thread/INFO]: [AngelChest] If you like AngelChest, you will LOVE AngelChestPlus, so
+[13:49:12] [Server thread/INFO]: [AngelChest] please consider upgrading! Thank you for using AngelChest.
+[13:49:12] [Server thread/INFO]: [AngelChest] 
+[13:49:12] [Server thread/INFO]: [AngelChest] https://www.spigotmc.org/resources/88214
+[13:49:12] [Server thread/INFO]: [AngelChest] ========================================================
