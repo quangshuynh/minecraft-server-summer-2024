@@ -1,0 +1,112 @@
+# You can set to -1 in order to disable offline growing
+plants-minutes-to-full-growth:
+  CARROTS: 30
+  POTATOES: 30
+  WHEAT: 30
+  BEETROOTS: 20
+  NETHER_WART: 30
+  COCOA: 10
+  # For versions < 1.13, OAK_SAPLING minutes value will be set for all saplings (other saplings will be ignored)
+  OAK_SAPLING: 10
+  SPRUCE_SAPLING: 10
+  BIRCH_SAPLING: 10
+  JUNGLE_SAPLING: 10
+  ACACIA_SAPLING: 10
+  DARK_OAK_SAPLING: 10
+  CACTUS: 36
+  SUGAR_CANE: 36
+  # Melon and pumpkin (blocks) grows in 25% of the time of the stem, when the stem has grown up. 
+  # For example, for default time (36 minutes for stem), the melon would grow in 9 minutes (25% of 36) when the stem is fully ripe
+  MELON_STEM: 36
+  PUMPKIN_STEM: 36
+  # Planted kelp/weeping or twisting vines have random max height (maximum of 25 blocks). This measures the time it takes to grow to 25 blocks.
+  KELP: 22
+  SWEET_BERRY_BUSH: 40
+  # This measures the time it takes to grow to 14 blocks.
+  BAMBOO: 45
+  WEEPING_VINES: 22
+  TWISTING_VINES: 22
+  CAVE_VINES: 22
+  #These are planted mangrove propagules that grow a tree (not the propagules under the mangrove leaves)
+  MANGROVE_PROPAGULE: 15
+  CHERRY_SAPLING: 15
+  TORCHFLOWER: 20
+  PITCHER: 20
+
+#OfflineGrowth Pro exclusive feature
+mobs-minutes-to-full-growth:
+  CHICKEN: 20
+  PIG: 20
+  COW: 20
+  SHEEP: 20
+  #Although sheep's wool actually grows when they eat grass, this artificial implementation has been created to simulate the growth of their wool while offline:
+  #It assumes that its wool grows when you have spent 10 minutes being offline (away from the sheep). If you return before 10 minutes, the wool has a chance to grow (the closer to 10 minutes, the higher the chance).
+  SHEEP_WOOL: 10
+  MUSHROOM_COW: 20
+  RABBIT: 20
+  WOLF: 20
+  OCELOT: 20
+  HORSE: 20
+  VILLAGER: 20
+  POLAR_BEAR: 20
+  MULE: 20
+  DONKEY: 20
+  LLAMA: 20
+  TURTLE: 20
+  TRADER_LLAMA: 20
+  FOX: 20
+  CAT: 20
+  BEE: 20
+  PANDA: 20
+  STRIDER: 20
+  GOAT: 20
+  AXOLOTL: 20
+  FROG: 20
+  TADPOLE: 20
+  SNIFFER: 40
+  CAMEL: 20
+
+  
+# Worlds that OfflineGrowth shouldn't handle
+blacklisted-worlds:
+- 'world1'
+
+# Even if chunks are always loaded on spawn chunks, it requires a nearby player for crops to grow, so
+# OfflineGrowth can't handle it, since the plugin works for unloaded chunks. Alternatively, you can set
+# disable-spawn-chunks to true, so spawn chunks are removed, and OfflineGrowth can work there. Note: setting
+# this to true, disables spawn chunks for every world that is not blacklisted (see blacklisted-worlds above)
+disable-spawn-chunks: false
+    
+database:
+  # JSON, MYSQL, MARIADB, MONGODB, SQLITE and POSTGRESQL.
+  # Minimum required versions:
+  #    MySQL versions 5.7 or later
+  #    MariaDB versions 10.2.3 or later
+  #    MongoDB versions 3.6 or later
+  #    SQLite versions 3.28 or later
+  #    PostgreSQL versions 9.4 or later
+  # YAML and JSON are file-based databases.
+  # MYSQL might not work with all implementations. If available, use a dedicated database type (e.g. MARIADB).
+  # If you use MONGODB, you must also run the BSBMongo plugin by tastybento.
+  # See https://github.com/tastybento/bsbMongo/releases/.
+  type: JSON
+  host: localhost
+  # Port 3306 is MySQL's default. Port 27017 is MongoDB's default.
+  port: 3306
+  name: offline_growth
+  username: username
+  password: password
+  # How often the data will be saved to file in mins. Default is 5 minutes.
+  # This helps prevent issues if the server crashes.
+  # Data is also saved at important points in the game.
+  backup-period: 5
+  # Enable SSL connection to MongoDB, MariaDB, MySQL and PostgreSQL databases.
+  use-ssl: false
+  # Database table prefix. Adds a prefix to the database tables. Not used by flatfile databases.
+  # Only the characters A-Z, a-z, 0-9 can be used. Invalid characters will become an underscore.
+  # Set this to a unique value if you are running multiple plugin instances that share a database.
+  # Be careful about length - databases usually have a limit of 63 characters for table lengths
+  prefix-character: ''
+  # MongoDB client connection URI to override default connection options.
+  # See: https://docs.mongodb.com/manual/reference/connection-string/
+  mongodb-connection-uri: ''
