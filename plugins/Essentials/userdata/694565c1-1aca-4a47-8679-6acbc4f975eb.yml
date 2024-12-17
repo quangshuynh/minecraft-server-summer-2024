@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 104.229.195.46
+ip-address: 104.229.194.95
 afk: false
 socialspy: false
 npc: false
@@ -11,29 +11,29 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1722390227575
+  lastteleport: 1734410858283
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1722390469606
-  login: 1722375932131
+  logout: 1734411139518
+  login: 1734405182020
 money: '0'
 last-account-name: Hymic
 nickname: §2Quang
 lastlocation:
   world: ab0fadff-60ab-430f-b890-e8b58df931dd
   world-name: world
-  x: -2484.3626960777233
-  y: 63.0
-  z: 4370.989356056519
-  yaw: 21.8101806640625
-  pitch: 33.45027542114258
+  x: -2640.027736991179
+  y: 65.5
+  z: 4300.632394873189
+  yaw: -114.15834045410156
+  pitch: 34.82010269165039
 logoutlocation:
   world: ab0fadff-60ab-430f-b890-e8b58df931dd
   world-name: world
-  x: -2629.0161621173297
-  y: 63.5
-  z: 4290.699999988079
-  yaw: 30.9622802734375
-  pitch: 14.93300724029541
+  x: -2636.7653468573562
+  y: 63.0
+  z: 4293.258585771182
+  yaw: -150.87399291992188
+  pitch: 8.289249420166016
