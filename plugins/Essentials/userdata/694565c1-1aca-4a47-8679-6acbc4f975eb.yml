@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1734438746469
-  login: 1734436559856
+  logout: 1734442391404
+  login: 1734438853890
 money: '0'
 last-account-name: Hymic
 nickname: §2Quang
@@ -32,8 +32,8 @@ lastlocation:
 logoutlocation:
   world: ab0fadff-60ab-430f-b890-e8b58df931dd
   world-name: world
-  x: -2629.280172248703
-  y: 59.0
-  z: 4285.814809025707
-  yaw: -80.11550903320312
-  pitch: 28.067996978759766
+  x: -2630.10525413513
+  y: 64.0
+  z: 4289.390442107882
+  yaw: -148.99578857421875
+  pitch: 42.453514099121094
