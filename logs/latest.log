@@ -1,226 +1,745 @@
-[16:52:20] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[16:52:21] [ServerMain/INFO]: Loaded 1175 recipes
-[16:52:21] [ServerMain/INFO]: Loaded 1276 advancements
-[16:52:21] [Server thread/INFO]: Starting minecraft server version 1.20.6
-[16:52:21] [Server thread/INFO]: Loading properties
-[16:52:21] [Server thread/INFO]: This server is running Paper version 1.20.6-151-ver/1.20.6@a4f0f5c (2024-10-30T19:13:22Z) (Implementing API version 1.20.6-R0.1-SNAPSHOT)
-[16:52:22] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[16:52:22] [Server thread/INFO]: Using 4 threads for Netty based IO
-[16:52:22] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[20:38:56] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[20:38:57] [ServerMain/INFO]: Loaded 1175 recipes
+[20:38:57] [ServerMain/INFO]: Loaded 1276 advancements
+[20:38:57] [Server thread/INFO]: Starting minecraft server version 1.20.6
+[20:38:57] [Server thread/INFO]: Loading properties
+[20:38:57] [Server thread/INFO]: This server is running Paper version 1.20.6-151-ver/1.20.6@a4f0f5c (2024-10-30T19:13:22Z) (Implementing API version 1.20.6-R0.1-SNAPSHOT)
+[20:38:58] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[20:38:58] [Server thread/INFO]: Using 4 threads for Netty based IO
+[20:38:58] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[16:52:22] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
-[16:52:22] [Server thread/INFO]: Default game type: SURVIVAL
-[16:52:22] [Server thread/INFO]: Generating keypair
-[16:52:22] [Server thread/INFO]: Starting Minecraft server on *:25565
-[16:52:22] [Server thread/INFO]: Using default channel type
-[16:52:22] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[16:52:22] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[16:52:23] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.131
-[16:52:23] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.0-dev+144-d31ff55
-[16:52:23] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
-[16:52:24] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@38d00ee]
-[16:52:24] [Server thread/INFO]: [VeinMiner] Loading server plugin VeinMiner v2.2.4
-[16:52:24] [Server thread/INFO]: [OfflineGrowthPro] Loading server plugin OfflineGrowthPro v2.0.3
-[16:52:24] [Server thread/INFO]: [NoEndermanGrief] Loading server plugin NoEndermanGrief v1.14_1.0.9
-[16:52:24] [Server thread/INFO]: [GSit] Loading server plugin GSit v1.9.1
-[16:52:24] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.6.0-SNAPSHOT
-[16:52:24] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[16:52:24] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[16:52:24] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.21.0-dev+144-d31ff55
-[16:52:24] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.4.28
-[16:52:24] [Server thread/INFO]: [ChatItem] Loading server plugin ChatItem v2.6.2
-[16:52:24] [Server thread/INFO]: [AngelChest] Loading server plugin AngelChest v11.1.3
-[16:52:24] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[16:52:24] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.131
-[16:52:25] [Server thread/INFO]:         __    
-[16:52:25] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.131
-[16:52:25] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[16:52:25] [Server thread/INFO]: 
-[16:52:25] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[16:52:25] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[16:52:25] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[16:52:25] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[16:52:25] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 727ms)
-[16:52:25] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
-[16:52:25] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[16:52:25] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[16:52:26] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
-[16:52:26] [Server thread/INFO]: Preparing level "world"
-[16:52:27] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[16:52:27] [Server thread/INFO]: Time elapsed: 424 ms
-[16:52:27] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[16:52:27] [Server thread/INFO]: Time elapsed: 96 ms
-[16:52:27] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[16:52:28] [Server thread/INFO]: Time elapsed: 48 ms
-[16:52:28] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.0-dev+144-d31ff55
-[16:52:28] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[16:52:28] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[16:52:28] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
-[16:52:28] [Server thread/INFO]: [Essentials] Using locale en_US
-[16:52:28] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[16:52:28] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[16:52:28] [Server thread/WARN]: [Essentials] Detected supported permissions plugin LuckPerms without Vault installed.
-[16:52:28] [Server thread/WARN]: [Essentials] Features such as chat prefixes/suffixes and group-related functionality will not work until you install Vault.
-[16:52:28] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
-[16:52:28] [Server thread/INFO]: [VeinMiner] Enabling VeinMiner v2.2.4
-[16:52:28] [Server thread/INFO]: [VeinMiner] Loading configuration options to local memory
-[16:52:28] [Server thread/INFO]: [VeinMiner] Added 13 aliases.
-[16:52:28] [Server thread/INFO]: [VeinMiner] Registered category with id "Axe" holding 6 unique items and 26 unique blocks.
-[16:52:28] [Server thread/INFO]: [VeinMiner] Registered category with id "Hoe" holding 6 unique items and 10 unique blocks.
-[16:52:28] [Server thread/INFO]: [VeinMiner] Registered category with id "Pickaxe" holding 6 unique items and 25 unique blocks.
-[16:52:28] [Server thread/INFO]: [VeinMiner] Registered category with id "Shears" holding 1 unique items and 27 unique blocks.
-[16:52:28] [Server thread/INFO]: [VeinMiner] Registered category with id "Shovel" holding 6 unique items and 9 unique blocks.
-[16:52:28] [Server thread/WARN]: [VeinMiner] No block list configured for category with id "Hand"! Is this intentional?
-[16:52:28] [Server thread/INFO]: [VeinMiner] Registered category with id "Hand" holding 0 unique items and 0 unique blocks.
-[16:52:28] [Server thread/INFO]: [VeinMiner] Performing an update check!
-[16:52:28] [Server thread/INFO]: [VeinMiner] Registering commands
-[16:52:28] [Server thread/INFO]: [VeinMiner] Registering events
-[16:52:28] [Server thread/INFO]: [VeinMiner] Vault not found. Economy support suspended
-[16:52:28] [Server thread/INFO]: [VeinMiner] Enabling Plugin Metrics
-[16:52:28] [Server thread/INFO]: [VeinMiner] Thanks for enabling Metrics! The anonymous stats are appreciated
-[16:52:28] [Server thread/INFO]: [OfflineGrowthPro] Enabling OfflineGrowthPro v2.0.3
-[16:52:28] [ForkJoinPool.commonPool-worker-1/INFO]: [VeinMiner] Using SQLITE for persistent storage.
-[16:52:28] [ForkJoinPool.commonPool-worker-1/INFO]: [VeinMiner] You are on the latest version of VeinMiner.
-[16:52:28] [Server thread/INFO]: [NoEndermanGrief] Enabling NoEndermanGrief v1.14_1.0.9
-[16:52:28] [Server thread/INFO]: [NoEndermanGrief] **************************************
-[16:52:28] [Server thread/INFO]: [NoEndermanGrief]  v1.14_1.0.9 Loading...
-[16:52:28] [Server thread/INFO]: [NoEndermanGrief] Server Version: 1.20.6-151-a4f0f5c (MC: 1.20.6)
-[16:52:28] [Server thread/INFO]: [NoEndermanGrief] This is not a DEV version.
-[16:52:28] [Server thread/INFO]: [NoEndermanGrief] Checking lang files...
-[16:52:28] [Server thread/INFO]: [NoEndermanGrief] Checking config file...
-[16:52:28] [Server thread/INFO]: [NoEndermanGrief] plugins\NoEndermanGrief\config.yml
-[16:52:28] [Server thread/INFO]: [NoEndermanGrief] Checking config file version...
-[16:52:28] [Server thread/INFO]: [NoEndermanGrief] Config file version=1.0.6 expected=1.0.6
-[16:52:28] [Server thread/INFO]: [NoEndermanGrief] Checking for updates...
-[16:52:29] [Server thread/INFO]: [NoEndermanGrief] *!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*
-[16:52:29] [Server thread/INFO]: [NoEndermanGrief] * Version is up to date!
-[16:52:29] [Server thread/INFO]: [NoEndermanGrief] * Donate: https://ko-fi.com/joelgodofwar
-[16:52:29] [Server thread/INFO]: [NoEndermanGrief] *!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*
-[16:52:29] [Server thread/INFO]: [NoEndermanGrief]  v1.14_1.0.9 is ENABLED - Loading took 401 ms.
-[16:52:29] [Server thread/INFO]: [GSit] Enabling GSit v1.9.1
-[16:52:29] [Server thread/INFO]: [GSit] The plugin was successfully enabled.
-[16:52:29] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.6.0-SNAPSHOT
-[16:52:29] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.21.0-dev+144-d31ff55
-[16:52:29] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
-[16:52:29] [Server thread/INFO]: [Chunky] Enabling Chunky v1.4.28
-[16:52:29] [Server thread/INFO]: [ChatItem] Enabling ChatItem v2.6.2
-[16:52:29] [Server thread/INFO]: [ChatItem] Detected server version: v1_20_6 (Platform: PaperMC)
-[16:52:29] [Server thread/INFO]: [ChatItem] Loading own packet system.
-[16:52:29] [Server thread/INFO]: [ChatItem] Use ComponentBuilder's method.
-[16:52:29] [Server thread/INFO]: [ChatItem] Manager automatically chosen: PacketEditing (packet), ChatListener (chat), Paper (paper), Own Formatter (ownformatter)
-[16:52:29] [Server thread/INFO]: [ChatItem] Load Essentials support.
-[16:52:29] [Server thread/INFO]: [ChatItem] Loaded translation for en_gb.
-[16:52:29] [Server thread/INFO]: [AngelChest] Enabling AngelChest v11.1.3
-[16:52:29] [Server thread/INFO]: [AngelChest] groups.yml does not exist, skipping custom group settings.
-[16:52:29] [Server thread/INFO]: [AngelChest] blacklist.yml does not exist, disabling item blacklist.
-[16:52:29] [Server thread/INFO]: [AngelChest] Not using premium version, disabling Graveyards feature
-[16:52:29] [Server thread/INFO]: [AngelChest] Vault not installed, disabling economy functions.
-[16:52:29] [Server thread/INFO]: [AngelChest] [ACF] Enabled Asynchronous Tab Completion Support!
-[16:52:29] [Server thread/INFO]: [AngelChest] Successfully enabled AngelChest v11.1.3 (Premium: false)
-[16:52:30] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[16:52:30] [Server thread/INFO]: [Geyser-Spigot] 
-[16:52:30] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.6.0-b734 (git-master-64c7adc)
-[16:52:30] [Server thread/INFO]: [Geyser-Spigot] 
-[16:52:30] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[16:52:32] [Server thread/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
-[16:52:32] [Server thread/INFO]: [Geyser-Spigot] Done (2.47s)! Run /geyser help for help!
-[16:52:32] [Server thread/WARN]: [Geyser-Spigot] Your server software does not support the Java version that Geyser requires (1.21.4). Please install ViaVersion (https://ci.viaversion.com/job/ViaVersion/) or update your server software!
-[16:52:32] [Server thread/INFO]: Starting GS4 status listener
-[16:52:32] [Server thread/INFO]: Thread Query Listener started
-[16:52:32] [Query Listener #1/INFO]: Query running on 0.0.0.0:25565
-[16:52:32] [Server thread/INFO]: Running delayed init tasks
-[16:52:32] [Server thread/INFO]: [OfflineGrowthPro] Loaded 1 chunks into memory on first startup
-[16:52:32] [Server thread/INFO]: Done (10.932s)! For help, type "help"
-[16:52:32] [Server thread/INFO]: Timings Reset
-[16:52:32] [Craft Scheduler Thread - 1 - Essentials/INFO]: [Essentials] Fetching version information...
-[16:52:33] [Craft Scheduler Thread - 1 - Essentials/WARN]: [Essentials] You're 7 EssentialsX dev build(s) out of date!
-[16:52:33] [Craft Scheduler Thread - 1 - Essentials/WARN]: [Essentials] Download it here: https://essentialsx.net/downloads.html
-[16:52:34] [Server thread/WARN]: [AngelChest] ***************************************************
-[16:52:34] [Server thread/WARN]: [AngelChest] * There is a new version of AngelChest available!
-[16:52:34] [Server thread/WARN]: [AngelChest] *  
-[16:52:34] [Server thread/WARN]: [AngelChest] * Your version:   §c11.1.3
-[16:52:34] [Server thread/WARN]: [AngelChest] * Latest version: §a13.9.0
-[16:52:34] [Server thread/WARN]: [AngelChest] *  
-[16:52:34] [Server thread/WARN]: [AngelChest] * Please update to the newest version.
-[16:52:34] [Server thread/WARN]: [AngelChest] *  
-[16:52:34] [Server thread/WARN]: [AngelChest] * Download (Plus):
-[16:52:34] [Server thread/WARN]: [AngelChest] *   https://www.spigotmc.org/resources/88214
-[16:52:34] [Server thread/WARN]: [AngelChest] *  
-[16:52:34] [Server thread/WARN]: [AngelChest] * Download (Free):
-[16:52:34] [Server thread/WARN]: [AngelChest] *   https://www.spigotmc.org/resources/60383
-[16:52:34] [Server thread/WARN]: [AngelChest] ***************************************************
-[16:52:35] [Server thread/INFO]: [AngelChest] ========================================================
-[16:52:35] [Server thread/INFO]: [AngelChest] You are using the free version of AngelChest. There is
-[16:52:35] [Server thread/INFO]: [AngelChest] also a premium version available, called AngelChestPlus.
-[16:52:35] [Server thread/INFO]: [AngelChest] It includes TONS of new features and exclusive Discord
-[16:52:35] [Server thread/INFO]: [AngelChest] support. The free version will still receive bugfixes,
-[16:52:35] [Server thread/INFO]: [AngelChest] but there won't be ANY new features!
-[16:52:35] [Server thread/INFO]: [AngelChest] If you like AngelChest, you will LOVE AngelChestPlus, so
-[16:52:35] [Server thread/INFO]: [AngelChest] please consider upgrading! Thank you for using AngelChest.
-[16:52:35] [Server thread/INFO]: [AngelChest] 
-[16:52:35] [Server thread/INFO]: [AngelChest] https://www.spigotmc.org/resources/88214
-[16:52:35] [Server thread/INFO]: [AngelChest] ========================================================
-[16:56:17] [User Authenticator #0/INFO]: UUID of player diorcat is f121866f-2ed0-4817-b5d5-9c3ed8d25c25
-[16:56:19] [Server thread/INFO]: diorcat joined the game
-[16:56:19] [Server thread/INFO]: diorcat[/72.224.13.53:63836] logged in with entity id 75 at ([world]-2652.9460374765076, 51.0, 4299.591211310687)
-[16:56:57] [User Authenticator #0/INFO]: UUID of player Hymic is 694565c1-1aca-4a47-8679-6acbc4f975eb
-[16:56:58] [Server thread/INFO]: Hymic joined the game
-[16:56:58] [Server thread/INFO]: Hymic[/104.229.194.95:59220] logged in with entity id 377 at ([world]-2633.6808782447056, 63.0, 4292.242558020035)
-[16:57:07] [Server thread/INFO]: Hymic issued server command: /tp diorcat
-[16:57:07] [Server thread/WARN]: Hymic moved too quickly! -22.246037488428556,-8.0,4.256205984604094
-[16:57:07] [Server thread/WARN]: Hymic moved too quickly! -22.246037488428556,-8.0,4.256205984604094
-[16:57:15] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
-[16:57:21] [Server thread/INFO]: Hymic issued server command: /thru
-[16:57:57] [Server thread/INFO]: diorcat issued server command: /tp hymic
-[16:58:43] [Server thread/INFO]: diorcat lost connection: Disconnected
-[16:58:43] [Server thread/INFO]: diorcat left the game
-[16:58:45] [Server thread/INFO]: Stopping the server
-[16:58:45] [Server thread/INFO]: Stopping server
-[16:58:45] [Server thread/INFO]: [AngelChest] Disabling AngelChest v11.1.3
-[16:58:45] [Server thread/INFO]: [ChatItem] Disabling ChatItem v2.6.2
-[16:58:45] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.28
-[16:58:45] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.21.0-dev+144-d31ff55
-[16:58:45] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.6.0-SNAPSHOT
-[16:58:45] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
-[16:58:45] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
-[16:58:45] [Server thread/INFO]: [GSit] Disabling GSit v1.9.1
-[16:58:45] [Server thread/INFO]: [GSit] The plugin was successfully disabled.
-[16:58:45] [Server thread/INFO]: [NoEndermanGrief] Disabling NoEndermanGrief v1.14_1.0.9
-[16:58:45] [Server thread/INFO]: [NoEndermanGrief]  v1.14_1.0.9 is DISABLED
-[16:58:45] [Server thread/INFO]: [OfflineGrowthPro] Disabling OfflineGrowthPro v2.0.3
-[16:58:45] [Server thread/INFO]: [VeinMiner] Disabling VeinMiner v2.2.4
-[16:58:45] [Server thread/INFO]: [VeinMiner] Clearing localized data
-[16:58:45] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
-[16:58:45] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[16:58:45] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+144-d31ff55
-[16:58:45] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.131
-[16:58:45] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[16:58:45] [Server thread/INFO]: [LuckPerms] Closing storage...
-[16:58:45] [Server thread/INFO]: [LuckPerms] Goodbye!
-[16:58:45] [Server thread/INFO]: Saving players
-[16:58:45] [Server thread/INFO]: Hymic lost connection: Server closed
-[16:58:45] [Server thread/INFO]: Hymic left the game
-[16:58:45] [Server thread/INFO]: Saving worlds
-[16:58:45] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[16:58:45] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[16:58:45] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[16:58:45] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[16:58:46] [Server thread/INFO]: [ChunkHolderManager] Saved 317 block chunks, 319 entity chunks, 0 poi chunks in world 'world' in 0.35s
-[16:58:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[16:58:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[16:58:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[16:58:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[16:58:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[16:58:46] [Server thread/INFO]: [ChunkHolderManager] Saved 2 block chunks, 23 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
-[16:58:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[16:58:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[16:58:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[16:58:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[16:58:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[16:58:46] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 11 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
-[16:58:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[16:58:46] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[16:58:46] [Server thread/INFO]: Flushing Chunk IO
-[16:58:46] [Server thread/INFO]: Closing Thread Pool
-[16:58:46] [Server thread/INFO]: Closing Server
+[20:38:58] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
+[20:38:58] [Server thread/INFO]: Default game type: SURVIVAL
+[20:38:58] [Server thread/INFO]: Generating keypair
+[20:38:58] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:38:59] [Server thread/INFO]: Using default channel type
+[20:38:59] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[20:38:59] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[20:38:59] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.131
+[20:38:59] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.0-dev+144-d31ff55
+[20:38:59] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
+[20:39:00] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@61921d84]
+[20:39:00] [Server thread/INFO]: [VeinMiner] Loading server plugin VeinMiner v2.2.4
+[20:39:00] [Server thread/INFO]: [OfflineGrowthPro] Loading server plugin OfflineGrowthPro v2.0.3
+[20:39:00] [Server thread/INFO]: [NoEndermanGrief] Loading server plugin NoEndermanGrief v1.14_1.0.9
+[20:39:00] [Server thread/INFO]: [GSit] Loading server plugin GSit v1.9.1
+[20:39:00] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.6.0-SNAPSHOT
+[20:39:01] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[20:39:01] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[20:39:01] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.21.0-dev+144-d31ff55
+[20:39:01] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.4.28
+[20:39:01] [Server thread/INFO]: [ChatItem] Loading server plugin ChatItem v2.6.2
+[20:39:01] [Server thread/INFO]: [AngelChest] Loading server plugin AngelChest v11.1.3
+[20:39:01] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:39:01] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.131
+[20:39:01] [Server thread/INFO]:         __    
+[20:39:01] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.131
+[20:39:01] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[20:39:01] [Server thread/INFO]: 
+[20:39:01] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[20:39:01] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[20:39:01] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[20:39:01] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[20:39:02] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 721ms)
+[20:39:02] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
+[20:39:02] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[20:39:02] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[20:39:02] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
+[20:39:03] [Server thread/INFO]: Preparing level "world"
+[20:39:03] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[20:39:04] [Server thread/INFO]: Time elapsed: 385 ms
+[20:39:04] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[20:39:04] [Server thread/INFO]: Time elapsed: 99 ms
+[20:39:04] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[20:39:04] [Server thread/INFO]: Time elapsed: 37 ms
+[20:39:04] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.0-dev+144-d31ff55
+[20:39:04] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[20:39:04] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[20:39:04] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
+[20:39:04] [Server thread/INFO]: [Essentials] Using locale en_US
+[20:39:04] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[20:39:05] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[20:39:05] [Server thread/WARN]: [Essentials] Detected supported permissions plugin LuckPerms without Vault installed.
+[20:39:05] [Server thread/WARN]: [Essentials] Features such as chat prefixes/suffixes and group-related functionality will not work until you install Vault.
+[20:39:05] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[20:39:05] [Server thread/INFO]: [VeinMiner] Enabling VeinMiner v2.2.4
+[20:39:05] [Server thread/INFO]: [VeinMiner] Loading configuration options to local memory
+[20:39:05] [Server thread/INFO]: [VeinMiner] Added 13 aliases.
+[20:39:05] [Server thread/INFO]: [VeinMiner] Registered category with id "Axe" holding 6 unique items and 26 unique blocks.
+[20:39:05] [Server thread/INFO]: [VeinMiner] Registered category with id "Hoe" holding 6 unique items and 10 unique blocks.
+[20:39:05] [Server thread/INFO]: [VeinMiner] Registered category with id "Pickaxe" holding 6 unique items and 25 unique blocks.
+[20:39:05] [Server thread/INFO]: [VeinMiner] Registered category with id "Shears" holding 1 unique items and 27 unique blocks.
+[20:39:05] [Server thread/INFO]: [VeinMiner] Registered category with id "Shovel" holding 6 unique items and 9 unique blocks.
+[20:39:05] [Server thread/WARN]: [VeinMiner] No block list configured for category with id "Hand"! Is this intentional?
+[20:39:05] [Server thread/INFO]: [VeinMiner] Registered category with id "Hand" holding 0 unique items and 0 unique blocks.
+[20:39:05] [Server thread/INFO]: [VeinMiner] Performing an update check!
+[20:39:05] [Server thread/INFO]: [VeinMiner] Registering commands
+[20:39:05] [Server thread/INFO]: [VeinMiner] Registering events
+[20:39:05] [Server thread/INFO]: [VeinMiner] Vault not found. Economy support suspended
+[20:39:05] [Server thread/INFO]: [VeinMiner] Enabling Plugin Metrics
+[20:39:05] [Server thread/INFO]: [VeinMiner] Thanks for enabling Metrics! The anonymous stats are appreciated
+[20:39:05] [Server thread/INFO]: [OfflineGrowthPro] Enabling OfflineGrowthPro v2.0.3
+[20:39:05] [ForkJoinPool.commonPool-worker-1/INFO]: [VeinMiner] Using SQLITE for persistent storage.
+[20:39:05] [ForkJoinPool.commonPool-worker-1/INFO]: [VeinMiner] You are on the latest version of VeinMiner.
+[20:39:05] [Server thread/INFO]: [NoEndermanGrief] Enabling NoEndermanGrief v1.14_1.0.9
+[20:39:05] [Server thread/INFO]: [NoEndermanGrief] **************************************
+[20:39:05] [Server thread/INFO]: [NoEndermanGrief]  v1.14_1.0.9 Loading...
+[20:39:05] [Server thread/INFO]: [NoEndermanGrief] Server Version: 1.20.6-151-a4f0f5c (MC: 1.20.6)
+[20:39:05] [Server thread/INFO]: [NoEndermanGrief] This is not a DEV version.
+[20:39:05] [Server thread/INFO]: [NoEndermanGrief] Checking lang files...
+[20:39:05] [Server thread/INFO]: [NoEndermanGrief] Checking config file...
+[20:39:05] [Server thread/INFO]: [NoEndermanGrief] plugins\NoEndermanGrief\config.yml
+[20:39:05] [Server thread/INFO]: [NoEndermanGrief] Checking config file version...
+[20:39:05] [Server thread/INFO]: [NoEndermanGrief] Config file version=1.0.6 expected=1.0.6
+[20:39:05] [Server thread/INFO]: [NoEndermanGrief] Checking for updates...
+[20:39:06] [Server thread/INFO]: [NoEndermanGrief] *!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*
+[20:39:06] [Server thread/INFO]: [NoEndermanGrief] * Version is up to date!
+[20:39:06] [Server thread/INFO]: [NoEndermanGrief] * Donate: https://ko-fi.com/joelgodofwar
+[20:39:06] [Server thread/INFO]: [NoEndermanGrief] *!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*
+[20:39:06] [Server thread/INFO]: [NoEndermanGrief]  v1.14_1.0.9 is ENABLED - Loading took 942 ms.
+[20:39:06] [Server thread/INFO]: [GSit] Enabling GSit v1.9.1
+[20:39:06] [Server thread/INFO]: [GSit] The plugin was successfully enabled.
+[20:39:06] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.6.0-SNAPSHOT
+[20:39:06] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.21.0-dev+144-d31ff55
+[20:39:06] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[20:39:06] [Server thread/INFO]: [Chunky] Enabling Chunky v1.4.28
+[20:39:06] [Server thread/INFO]: [ChatItem] Enabling ChatItem v2.6.2
+[20:39:06] [Server thread/INFO]: [ChatItem] Detected server version: v1_20_6 (Platform: PaperMC)
+[20:39:06] [Server thread/INFO]: [ChatItem] Loading own packet system.
+[20:39:06] [Server thread/INFO]: [ChatItem] Use ComponentBuilder's method.
+[20:39:06] [Server thread/INFO]: [ChatItem] Manager automatically chosen: PacketEditing (packet), ChatListener (chat), Paper (paper), Own Formatter (ownformatter)
+[20:39:06] [Server thread/INFO]: [ChatItem] Load Essentials support.
+[20:39:07] [Server thread/INFO]: [ChatItem] Loaded translation for en_gb.
+[20:39:07] [Server thread/INFO]: [AngelChest] Enabling AngelChest v11.1.3
+[20:39:07] [Server thread/INFO]: [AngelChest] groups.yml does not exist, skipping custom group settings.
+[20:39:07] [Server thread/INFO]: [AngelChest] blacklist.yml does not exist, disabling item blacklist.
+[20:39:07] [Server thread/INFO]: [AngelChest] Not using premium version, disabling Graveyards feature
+[20:39:07] [Server thread/INFO]: [AngelChest] Vault not installed, disabling economy functions.
+[20:39:07] [Server thread/INFO]: [AngelChest] [ACF] Enabled Asynchronous Tab Completion Support!
+[20:39:07] [Server thread/INFO]: [AngelChest] Successfully enabled AngelChest v11.1.3 (Premium: false)
+[20:39:07] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[20:39:07] [Server thread/INFO]: [Geyser-Spigot] 
+[20:39:07] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.6.0-b734 (git-master-64c7adc)
+[20:39:07] [Server thread/INFO]: [Geyser-Spigot] 
+[20:39:07] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[20:39:09] [nioEventLoopGroup-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[20:39:09] [Server thread/INFO]: [Geyser-Spigot] Done (2.616s)! Run /geyser help for help!
+[20:39:09] [Server thread/WARN]: [Geyser-Spigot] Your server software does not support the Java version that Geyser requires (1.21.4). Please install ViaVersion (https://ci.viaversion.com/job/ViaVersion/) or update your server software!
+[20:39:09] [Server thread/INFO]: Starting GS4 status listener
+[20:39:10] [Server thread/INFO]: Thread Query Listener started
+[20:39:10] [Query Listener #1/INFO]: Query running on 0.0.0.0:25565
+[20:39:10] [Server thread/INFO]: Running delayed init tasks
+[20:39:10] [Server thread/INFO]: [OfflineGrowthPro] Loaded 1 chunks into memory on first startup
+[20:39:10] [Server thread/INFO]: Done (12.307s)! For help, type "help"
+[20:39:10] [Server thread/INFO]: Timings Reset
+[20:39:10] [Craft Scheduler Thread - 3 - Essentials/INFO]: [Essentials] Fetching version information...
+[20:39:10] [Craft Scheduler Thread - 3 - Essentials/WARN]: [Essentials] You're 7 EssentialsX dev build(s) out of date!
+[20:39:10] [Craft Scheduler Thread - 3 - Essentials/WARN]: [Essentials] Download it here: https://essentialsx.net/downloads.html
+[20:39:12] [Server thread/WARN]: [AngelChest] ***************************************************
+[20:39:12] [Server thread/WARN]: [AngelChest] * There is a new version of AngelChest available!
+[20:39:12] [Server thread/WARN]: [AngelChest] *  
+[20:39:12] [Server thread/WARN]: [AngelChest] * Your version:   §c11.1.3
+[20:39:12] [Server thread/WARN]: [AngelChest] * Latest version: §a13.9.0
+[20:39:12] [Server thread/WARN]: [AngelChest] *  
+[20:39:12] [Server thread/WARN]: [AngelChest] * Please update to the newest version.
+[20:39:12] [Server thread/WARN]: [AngelChest] *  
+[20:39:12] [Server thread/WARN]: [AngelChest] * Download (Plus):
+[20:39:12] [Server thread/WARN]: [AngelChest] *   https://www.spigotmc.org/resources/88214
+[20:39:12] [Server thread/WARN]: [AngelChest] *  
+[20:39:12] [Server thread/WARN]: [AngelChest] * Download (Free):
+[20:39:12] [Server thread/WARN]: [AngelChest] *   https://www.spigotmc.org/resources/60383
+[20:39:12] [Server thread/WARN]: [AngelChest] ***************************************************
+[20:39:12] [Server thread/INFO]: [AngelChest] ========================================================
+[20:39:12] [Server thread/INFO]: [AngelChest] You are using the free version of AngelChest. There is
+[20:39:12] [Server thread/INFO]: [AngelChest] also a premium version available, called AngelChestPlus.
+[20:39:12] [Server thread/INFO]: [AngelChest] It includes TONS of new features and exclusive Discord
+[20:39:12] [Server thread/INFO]: [AngelChest] support. The free version will still receive bugfixes,
+[20:39:12] [Server thread/INFO]: [AngelChest] but there won't be ANY new features!
+[20:39:12] [Server thread/INFO]: [AngelChest] If you like AngelChest, you will LOVE AngelChestPlus, so
+[20:39:12] [Server thread/INFO]: [AngelChest] please consider upgrading! Thank you for using AngelChest.
+[20:39:12] [Server thread/INFO]: [AngelChest] 
+[20:39:12] [Server thread/INFO]: [AngelChest] https://www.spigotmc.org/resources/88214
+[20:39:12] [Server thread/INFO]: [AngelChest] ========================================================
+[20:39:42] [User Authenticator #0/INFO]: UUID of player Hymic is 694565c1-1aca-4a47-8679-6acbc4f975eb
+[20:39:43] [Server thread/INFO]: Hymic joined the game
+[20:39:43] [Server thread/INFO]: Hymic[/127.0.0.1:49951] logged in with entity id 75 at ([world]-2636.3003881662376, 63.0, 4293.264642246576)
+[20:46:34] [User Authenticator #1/INFO]: UUID of player diorcat is f121866f-2ed0-4817-b5d5-9c3ed8d25c25
+[20:46:36] [Server thread/INFO]: diorcat joined the game
+[20:46:36] [Server thread/INFO]: diorcat[/72.224.13.53:55407] logged in with entity id 1095 at ([world]-2636.487500011921, 63.0, 4295.092176954111)
+[20:46:52] [Server thread/INFO]: diorcat issued server command: /tp hymic
+[20:47:34] [Server thread/INFO]: Hymic issued server command: /kick diorcat too much gay butt sex
+[20:47:34] [Server thread/INFO]: diorcat lost connection: too much gay butt sex
+[20:47:34] [Server thread/INFO]: diorcat left the game
+[20:47:34] [Server thread/INFO]: [Essentials] Player Quang kicked diorcat for too much gay butt sex.
+[20:47:51] [User Authenticator #2/INFO]: UUID of player diorcat is f121866f-2ed0-4817-b5d5-9c3ed8d25c25
+[20:47:52] [Server thread/INFO]: diorcat joined the game
+[20:47:52] [Server thread/INFO]: diorcat[/72.224.13.53:55413] logged in with entity id 1264 at ([world]-2651.699999988079, 53.200000047683716, 4279.466906179366)
+[20:48:46] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
+[20:53:14] [Server thread/INFO]: Hymic issued server command: /pt tphere dior
+[20:53:15] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:15] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:17] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:17] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:17] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:17] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:17] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:17] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:17] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:17] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:17] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:17] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:18] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:18] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:18] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:18] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:18] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:18] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:18] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:18] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:19] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:19] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:19] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:19] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:19] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:19] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:19] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:19] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:19] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:19] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:20] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:20] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:20] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:20] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:20] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:20] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:20] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:20] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:20] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:20] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:21] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:21] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:21] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:21] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:21] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:21] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:21] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:21] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:21] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:21] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:21] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:21] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:22] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:22] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:22] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:22] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:22] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:22] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:22] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:22] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:22] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:22] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:22] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:22] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:22] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:22] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:23] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:23] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:23] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:23] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:23] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:23] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:23] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:23] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:23] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:23] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:24] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:24] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:24] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:24] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:24] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:24] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:24] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:24] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:24] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:24] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:25] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:25] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:25] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:25] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:25] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:25] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:25] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:25] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:25] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:25] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:26] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:26] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:26] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:26] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:26] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:26] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:26] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:26] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:27] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:27] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:27] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:27] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:27] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:27] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:27] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:27] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:27] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:27] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:28] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:28] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:28] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:28] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:28] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:28] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:28] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:28] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:29] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:29] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:29] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:29] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:29] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:29] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:29] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:29] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:29] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:29] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:30] [Server thread/INFO]: Hymic issued server command: /tphere dior
+[20:53:30] [Server thread/INFO]: [Essentials] [PT] Hymic issued server command: /tphere dior
+[20:53:32] [Server thread/INFO]: Hymic issued server command: /pt
+[20:53:47] [Server thread/INFO]: Hymic issued server command: /fly diorcat
+[20:53:52] [Server thread/INFO]: diorcat issued server command: /fly
+[20:53:56] [Server thread/INFO]: Hymic issued server command: /fly diorcat
+[20:54:02] [Server thread/INFO]: diorcat issued server command: /fly
+[20:58:57] [Server thread/INFO]: Hymic issued server command: //replacenear 5 4,dirt 1
+[20:58:59] [Server thread/INFO]: Hymic issued server command: //replacenear 5 4,dirt 1
+[20:59:00] [Server thread/INFO]: Hymic issued server command: //replacenear 5 4,dirt 1
+[20:59:02] [Server thread/INFO]: Hymic issued server command: //replacenear 5 4,dirt 1
+[20:59:05] [Server thread/INFO]: Hymic issued server command: //replacenear 5 4,dirt 1
+[20:59:06] [Server thread/INFO]: Hymic issued server command: //replacenear 5 4,dirt 1
+[20:59:08] [Server thread/INFO]: Hymic issued server command: //replacenear 5 4,dirt 1
+[20:59:25] [Server thread/INFO]: Hymic issued server command: /j
+[20:59:31] [Server thread/INFO]: Hymic issued server command: //replacenear 5 4,dirt 1
+[20:59:32] [Server thread/INFO]: Hymic issued server command: //replacenear 5 4,dirt 1
+[20:59:34] [Server thread/INFO]: Hymic issued server command: //replacenear 5 4,dirt 1
+[20:59:35] [Server thread/INFO]: Hymic issued server command: //replacenear 5 4,dirt 1
+[20:59:40] [Server thread/INFO]: Hymic issued server command: /tp diorcat
+[20:59:40] [Server thread/WARN]: Hymic moved too quickly! -2.0496393193307085,-9.483628842582831,10.41390503707862
+[20:59:51] [Server thread/INFO]: Hymic issued server command: /fly
+[21:00:55] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:01:07] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
+[21:06:02] [Server thread/INFO]: Hymic issued server command: /gmc
+[21:06:08] [Server thread/INFO]: Hymic issued server command: /gms
+[21:06:10] [Server thread/INFO]: Hymic issued server command: /flyh
+[21:06:11] [Server thread/INFO]: Hymic issued server command: /fly
+[21:06:22] [Server thread/INFO]: Hymic issued server command: /gmc
+[21:06:38] [Server thread/INFO]: diorcat issued server command: /j
+[21:06:39] [Server thread/INFO]: Hymic issued server command: /gms
+[21:06:58] [Server thread/INFO]: Hymic issued server command: /fly
+[21:07:04] [Server thread/INFO]: Hymic issued server command: /gmc
+[21:07:08] [Server thread/INFO]: Hymic issued server command: /gms
+[21:07:10] [Server thread/INFO]: Hymic issued server command: /fly
+[21:08:24] [Server thread/INFO]: Hymic issued server command: /warp base
+[21:08:24] [Server thread/WARN]: Hymic moved too quickly! 15.54424989429026,12.257634405857004,-6.902919364281843
+[21:16:32] [Server thread/INFO]: Hymic issued server command: //replacenear 5 4,dirt 1
+[21:16:34] [Server thread/INFO]: Hymic issued server command: /tp diorcat
+[21:17:16] [Server thread/INFO]: Hymic issued server command: /gmc
+[21:17:26] [Server thread/INFO]: Hymic issued server command: /tp diorcat
+[21:17:27] [Server thread/INFO]: Hymic issued server command: /gms
+[21:17:38] [Server thread/INFO]: Hymic issued server command: /fly
+[21:18:14] [Server thread/INFO]: Hymic issued server command: /gmc
+[21:18:17] [Server thread/INFO]: Hymic issued server command: /gms
+[21:18:19] [Server thread/INFO]: Hymic issued server command: /fly
+[21:19:29] [Server thread/INFO]: Hymic issued server command: /gmc
+[21:19:47] [Server thread/INFO]: Hymic issued server command: /gms
+[21:20:10] [Server thread/INFO]: Hymic issued server command: /kick diorcat big fart detected
+[21:20:10] [Server thread/INFO]: diorcat lost connection: big fart detected
+[21:20:10] [Server thread/INFO]: diorcat left the game
+[21:20:10] [Server thread/INFO]: [Essentials] Player Quang kicked diorcat for big fart detected.
+[21:20:20] [User Authenticator #3/INFO]: UUID of player diorcat is f121866f-2ed0-4817-b5d5-9c3ed8d25c25
+[21:20:21] [Server thread/INFO]: diorcat joined the game
+[21:20:21] [Server thread/INFO]: diorcat[/72.224.13.53:55498] logged in with entity id 3820 at ([world]-2628.926876946792, 59.0, 4297.188936799211)
+[21:20:27] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:20:54] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:21:16] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:21:28] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:21:44] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:22:02] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:22:05] [Server thread/INFO]: Hymic issued server command: /i andesitestair 1
+[21:27:09] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:28:51] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:30:03] [Server thread/INFO]: Hymic issued server command: /kick diorcat STINKY FART DETECTED
+[21:30:03] [Server thread/INFO]: diorcat lost connection: STINKY FART DETECTED
+[21:30:03] [Server thread/INFO]: diorcat left the game
+[21:30:03] [Server thread/INFO]: [Essentials] Player Quang kicked diorcat for STINKY FART DETECTED.
+[21:30:09] [User Authenticator #4/INFO]: UUID of player diorcat is f121866f-2ed0-4817-b5d5-9c3ed8d25c25
+[21:30:10] [Server thread/INFO]: diorcat joined the game
+[21:30:10] [Server thread/INFO]: diorcat[/72.224.13.53:55524] logged in with entity id 4349 at ([world]-2627.7513717026873, 59.0, 4297.137696374507)
+[21:30:16] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:30:40] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:32:15] [Server thread/INFO]: diorcat issued server command: /invse h
+[21:32:17] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:32:55] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:33:57] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:37:08] [Server thread/INFO]: Hymic issued server command: /warp base
+[21:37:08] [Server thread/WARN]: Hymic moved too quickly! 16.894406684555634,14.0,8.034877962584687
+[21:37:08] [Server thread/WARN]: Hymic moved too quickly! 16.894406684555634,14.0,8.034877962584687
+[21:38:44] [Server thread/INFO]: diorcat issued server command: /tp hymic
+[21:38:55] [Server thread/INFO]: diorcat issued server command: /back
+[21:39:08] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:39:17] [Server thread/INFO]: diorcat issued server command: /tp hymic
+[21:39:36] [Server thread/INFO]: Hymic issued server command: /fly
+[21:42:47] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:42:56] [Server thread/INFO]: diorcat issued server command: /back
+[21:42:56] [Server thread/WARN]: diorcat moved too quickly! 18.588607888142178,8.0,3.252304345654011
+[21:43:40] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:43:48] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:44:26] [Server thread/INFO]: Hymic issued server command: /kick diorcat STINKY FART DETECTED
+[21:44:26] [Server thread/INFO]: diorcat lost connection: STINKY FART DETECTED
+[21:44:26] [Server thread/INFO]: diorcat left the game
+[21:44:26] [Server thread/INFO]: [Essentials] Player Quang kicked diorcat for STINKY FART DETECTED.
+[21:44:31] [User Authenticator #5/INFO]: UUID of player diorcat is f121866f-2ed0-4817-b5d5-9c3ed8d25c25
+[21:44:32] [Server thread/INFO]: diorcat joined the game
+[21:44:32] [Server thread/INFO]: diorcat[/72.224.13.53:55545] logged in with entity id 5226 at ([world]-2628.7533290379524, 59.0, 4296.40398043141)
+[21:44:53] [Server thread/INFO]: diorcat issued server command: /tp hymic
+[21:44:58] [Server thread/INFO]: diorcat issued server command: /fly
+[21:45:56] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:46:39] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:47:07] [Server thread/INFO]: Hymic issued server command: /kick diorcat STINKY FART DETECTED
+[21:47:07] [Server thread/INFO]: diorcat lost connection: STINKY FART DETECTED
+[21:47:07] [Server thread/INFO]: diorcat left the game
+[21:47:07] [Server thread/INFO]: [Essentials] Player Quang kicked diorcat for STINKY FART DETECTED.
+[21:47:15] [User Authenticator #6/INFO]: UUID of player diorcat is f121866f-2ed0-4817-b5d5-9c3ed8d25c25
+[21:47:16] [Server thread/INFO]: diorcat joined the game
+[21:47:16] [Server thread/INFO]: diorcat[/72.224.13.53:55550] logged in with entity id 5339 at ([world]-2645.078368960087, 52.32505309191388, 4282.487278974128)
+[21:47:36] [Server thread/INFO]: diorcat issued server command: /back
+[21:47:36] [Server thread/WARN]: diorcat moved too quickly! 23.56490408694617,9.5,12.084964776395282
+[21:47:44] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:48:37] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
+[21:50:22] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
+[21:50:30] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:50:35] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
+[21:51:35] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:52:00] [Server thread/INFO]: diorcat issued server command: /back
+[21:52:41] [Server thread/INFO]: diorcat issued server command: /back
+[21:52:43] [Server thread/INFO]: diorcat issued server command: /back
+[21:52:58] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:53:22] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:53:53] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:54:10] [Server thread/INFO]: Hymic issued server command: /sudo diorcat kick Hymic BIG POOPY FART
+[21:54:10] [Server thread/INFO]: diorcat issued server command: /kick Hymic BIG POOPY FART
+[21:54:10] [Server thread/INFO]: Hymic lost connection: BIG POOPY FART
+[21:54:10] [Server thread/INFO]: Hymic left the game
+[21:54:10] [Server thread/INFO]: [Essentials] Player Catherine kicked Hymic for BIG POOPY FART.
+[21:55:03] [User Authenticator #7/INFO]: UUID of player Hymic is 694565c1-1aca-4a47-8679-6acbc4f975eb
+[21:55:03] [Server thread/INFO]: Hymic joined the game
+[21:55:03] [Server thread/INFO]: Hymic[/127.0.0.1:51942] logged in with entity id 5730 at ([world]-2649.6126350294817, 49.5, 4285.409927208277)
+[21:55:14] [Server thread/INFO]: diorcat issued server command: /tp hymic
+[21:55:39] [Server thread/INFO]: Hymic issued server command: /fly
+[21:55:42] [Server thread/INFO]: diorcat issued server command: /back
+[21:55:56] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:55:57] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
+[21:56:16] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:56:18] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
+[21:56:40] [Server thread/INFO]: Hymic issued server command: /save-all
+[21:56:40] [Server thread/INFO]: [Hymic: Saved the game]
+[21:56:54] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:57:01] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
+[21:57:30] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
+[21:57:36] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
+[21:59:00] [Server thread/INFO]: Hymic issued server command: /tp diorcat
+[21:59:00] [Server thread/WARN]: Hymic moved too quickly! 18.06170738565106,12.750860932076016,10.757295865713786
+[21:59:00] [Server thread/WARN]: Hymic moved too quickly! 18.06170738565106,12.750860932076016,10.757295865713786
+[21:59:05] [Server thread/INFO]: Hymic issued server command: /thru
+[21:59:07] [Server thread/INFO]: Hymic issued server command: /thru
+[21:59:08] [Server thread/INFO]: Hymic issued server command: /thru
+[21:59:09] [Server thread/INFO]: Hymic issued server command: /j
+[21:59:14] [Server thread/INFO]: Hymic issued server command: /tphere diorcat
+[21:59:14] [Server thread/WARN]: diorcat moved too quickly! 8.832382617449184,0.0,-14.963020226233311
+[21:59:20] [Server thread/INFO]: diorcat issued server command: /back
+[21:59:29] [Server thread/INFO]: diorcat issued server command: /invsee h
+[21:59:48] [Server thread/INFO]: diorcat issued server command: /tp hymic
+[21:59:48] [Server thread/WARN]: diorcat moved too quickly! -20.94585472627932,-8.0,-2.6512540732283014
+[22:00:09] [Server thread/INFO]: diorcat issued server command: /j
+[22:02:41] [Server thread/INFO]: diorcat issued server command: /tp hymic
+[22:02:41] [Server thread/WARN]: diorcat moved too quickly! -19.7991231918445,-7.75,-16.940740852369345
+[22:03:53] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:09:12] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
+[22:10:06] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:10:36] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:10:59] [Server thread/INFO]: diorcat issued server command: /tp hymic
+[22:11:44] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:12:24] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:14:04] [Server thread/INFO]: Hymic issued server command: /veinminer toollist pickaxe add minecraft:granite
+[22:14:10] [Server thread/INFO]: Hymic issued server command: /tphere diorcat
+[22:14:30] [Server thread/INFO]: Hymic issued server command: /veinminer blocklist pickaxe add minecraft:granite
+[22:14:41] [Server thread/INFO]: Hymic issued server command: /veinminer blocklist pickaxe remove minecraft:granite
+[22:14:52] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
+[22:14:59] [Server thread/INFO]: diorcat issued server command: /tp hymic
+[22:17:07] [Server thread/INFO]: Hymic issued server command: /kick diorcat poop
+[22:17:07] [Server thread/INFO]: diorcat lost connection: poop
+[22:17:07] [Server thread/INFO]: diorcat left the game
+[22:17:07] [Server thread/INFO]: [Essentials] Player Quang kicked diorcat for poop.
+[22:17:15] [User Authenticator #8/INFO]: UUID of player diorcat is f121866f-2ed0-4817-b5d5-9c3ed8d25c25
+[22:17:16] [Server thread/INFO]: diorcat joined the game
+[22:17:16] [Server thread/INFO]: diorcat[/72.224.13.53:55585] logged in with entity id 7172 at ([world]-2649.73854062779, 50.5, 4295.73291148272)
+[22:17:36] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
+[22:17:45] [Server thread/INFO]: Hymic issued server command: /deop diorcat
+[22:17:45] [Server thread/INFO]: [Hymic: Made diorcat no longer a server operator]
+[22:18:01] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
+[22:18:06] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
+[22:18:10] [Server thread/INFO]: Hymic issued server command: /invsee diorcat
+[22:18:49] [Server thread/INFO]: Hymic issued server command: /warp base
+[22:18:49] [Server thread/WARN]: Hymic moved too quickly! 22.411109082809162,13.5,-6.596312334631875
+[22:18:49] [Server thread/WARN]: Hymic moved too quickly! 22.411109082809162,13.5,-6.596312334631875
+[22:19:00] [Server thread/INFO]: Hymic issued server command: /tp diorcat
+[22:19:00] [Server thread/WARN]: Hymic moved too quickly! -15.227177480717728,-10.0,0.2701608870502241
+[22:19:18] [Server thread/INFO]: diorcat issued server command: /fly
+[22:19:18] [Server thread/INFO]: [Essentials] diorcat was denied access to command.
+[22:19:21] [Server thread/INFO]: diorcat issued server command: /fly
+[22:19:21] [Server thread/INFO]: [Essentials] diorcat was denied access to command.
+[22:19:23] [Server thread/INFO]: Hymic issued server command: /op diorcat
+[22:19:23] [Server thread/INFO]: [Hymic: Made diorcat a server operator]
+[22:19:25] [Server thread/INFO]: diorcat issued server command: /fly
+[22:19:33] [Server thread/INFO]: Hymic issued server command: /gmc
+[22:19:41] [Server thread/INFO]: Hymic issued server command: /gms
+[22:19:42] [Server thread/INFO]: Hymic issued server command: /fly
+[22:21:53] [Server thread/INFO]: Hymic issued server command: /tp diorcat
+[22:21:53] [Server thread/WARN]: Hymic moved too quickly! -11.490396597075232,-18.5,-15.020927115771883
+[22:21:53] [Server thread/WARN]: Hymic moved too quickly! -11.490396597075232,-18.5,-15.020927115771883
+[22:22:56] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:23:41] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:25:34] [Server thread/INFO]: Hymic issued server command: /j
+[22:25:37] [Server thread/INFO]: diorcat issued server command: /j
+[22:26:07] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:26:35] [Server thread/INFO]: diorcat issued server command: /j
+[22:26:49] [Server thread/INFO]: diorcat issued server command: /back
+[22:26:49] [Server thread/WARN]: diorcat moved too quickly! 1.406901563527299,-52.0,23.91708138641752
+[22:26:57] [Server thread/INFO]: diorcat issued server command: /tp hymic
+[22:26:57] [Server thread/WARN]: diorcat moved too quickly! 4.946221928447812,44.0,-4.2649024590546105
+[22:27:45] [Server thread/INFO]: Hymic issued server command: /j
+[22:27:50] [Server thread/INFO]: Hymic issued server command: /j
+[22:27:57] [Server thread/INFO]: Hymic issued server command: /j
+[22:28:06] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:28:46] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:30:42] [Server thread/INFO]: diorcat issued server command: /j
+[22:33:25] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:33:26] [Server thread/INFO]: Hymic issued server command: /invsee d
+[22:34:34] [Server thread/INFO]: diorcat issued server command: /j
+[22:34:49] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:34:54] [Server thread/INFO]: diorcat issued server command: /back
+[22:34:57] [Server thread/INFO]: diorcat issued server command: /back
+[22:35:12] [Server thread/INFO]: diorcat issued server command: /tp hymic
+[22:35:12] [Server thread/WARN]: diorcat moved too quickly! -17.26294417405734,-11.0,14.529857779946724
+[22:35:30] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:36:09] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:37:54] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:39:05] [Server thread/INFO]: Hymic issued server command: /gmc
+[22:39:56] [Server thread/INFO]: Hymic issued server command: /gms
+[22:40:56] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:46:28] [Server thread/INFO]: Hymic issued server command: /warp base
+[22:46:28] [Server thread/WARN]: Hymic moved too quickly! 21.742128264774237,14.0,-25.04143679448316
+[22:46:56] [Server thread/INFO]: Hymic issued server command: /tp diorcat
+[22:46:56] [Server thread/WARN]: Hymic moved too quickly! -12.222588912357423,-19.0,-1.7918486917242262
+[22:46:56] [Server thread/WARN]: Hymic moved too quickly! -12.222588912357423,-19.0,-1.7918486917242262
+[22:50:35] [Server thread/INFO]: Hymic issued server command: /fly
+[22:50:40] [Server thread/INFO]: Hymic issued server command: /warp base
+[22:50:40] [Server thread/WARN]: Hymic moved too quickly! 23.108135750659585,14.0,-20.46218168354426
+[22:50:40] [Server thread/WARN]: Hymic moved too quickly! 23.108135750659585,14.0,-20.46218168354426
+[22:50:40] [Server thread/WARN]: Hymic moved too quickly! 23.108135750659585,14.0,-20.46218168354426
+[22:51:25] [Server thread/INFO]: Hymic issued server command: /fly
+[22:51:27] [Server thread/INFO]: Hymic issued server command: /fly
+[22:56:34] [Server thread/INFO]: diorcat issued server command: /invsee h
+[22:57:35] [Server thread/INFO]: Hymic issued server command: /sudo diorcat kick hymic TOO STINKY
+[22:57:35] [Server thread/INFO]: diorcat issued server command: /kick hymic TOO STINKY
+[22:57:35] [Server thread/INFO]: Hymic lost connection: TOO STINKY
+[22:57:35] [Server thread/INFO]: Hymic left the game
+[22:57:35] [Server thread/INFO]: [Essentials] Player Catherine kicked Hymic for TOO STINKY.
+[22:57:41] [User Authenticator #9/INFO]: UUID of player Hymic is 694565c1-1aca-4a47-8679-6acbc4f975eb
+[22:57:41] [Server thread/INFO]: Hymic joined the game
+[22:57:41] [Server thread/INFO]: Hymic[/127.0.0.1:53424] logged in with entity id 10179 at ([world]-2649.2222009670077, 51.45586084061631, 4305.858742597467)
+[22:58:26] [Server thread/INFO]: Hymic issued server command: /fly
+[22:59:49] [Server thread/INFO]: Hymic issued server command: /help
+[23:00:22] [Server thread/INFO]: Hymic issued server command: /warp base
+[23:00:22] [Server thread/WARN]: Hymic moved too quickly! 18.13543724681267,13.0,-9.075045180728921
+[23:00:22] [Server thread/WARN]: Hymic moved too quickly! 18.13543724681267,13.0,-9.075045180728921
+[23:01:06] [Server thread/INFO]: diorcat issued server command: /j
+[23:02:50] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:03:25] [Server thread/INFO]: diorcat has made the advancement [Fishy Business]
+[23:04:12] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:06:53] [Server thread/INFO]: diorcat issued server command: /tp hymic
+[23:07:19] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:08:41] [Server thread/INFO]: diorcat issued server command: /invse h
+[23:08:44] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:08:48] [Server thread/INFO]: Hymic issued server command: /invsee d
+[23:08:50] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:09:01] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:09:13] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:10:53] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:11:59] [Server thread/INFO]: diorcat issued server command: /j
+[23:12:03] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:12:41] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:12:49] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:13:13] [Server thread/INFO]: diorcat issued server command: /tp hymic
+[23:13:19] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:13:52] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:14:36] [Server thread/INFO]: Hymic issued server command: /warp base
+[23:14:36] [Server thread/WARN]: Hymic moved too quickly! 21.067887225139657,10.85659766938339,-20.564210616417768
+[23:14:36] [Server thread/WARN]: Hymic moved too quickly! 21.067887225139657,10.85659766938339,-20.564210616417768
+[23:14:36] [Server thread/WARN]: Hymic moved too quickly! 21.067887225139657,10.85659766938339,-20.564210616417768
+[23:14:47] [Server thread/INFO]: Hymic issued server command: /i chest 2
+[23:14:57] [Server thread/INFO]: Hymic issued server command: /tp diorcat
+[23:15:03] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:17:05] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:17:34] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:17:57] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:18:05] [Server thread/INFO]: Hymic issued server command: /i dark_oak_stairs 1
+[23:18:14] [Server thread/INFO]: Hymic issued server command: /i dark_oak_stairs 1
+[23:18:20] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:19:09] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:19:10] [Server thread/INFO]: Hymic issued server command: /i dark_oak_stairs 6
+[23:19:18] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:19:42] [Server thread/INFO]: diorcat issued server command: /warp base
+[23:19:57] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:20:00] [Server thread/INFO]: Hymic issued server command: /i dark_oak_fence 1
+[23:20:06] [Server thread/INFO]: Hymic issued server command: /invsee d
+[23:20:24] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:20:36] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:20:55] [Server thread/INFO]: diorcat issued server command: /tp hymic
+[23:21:13] [Server thread/INFO]: diorcat issued server command: /warp base
+[23:22:01] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:22:07] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:22:32] [Server thread/INFO]: diorcat issued server command: /tp hymic
+[23:22:32] [Server thread/WARN]: diorcat moved too quickly! -10.096960906683762,-13.0,18.103884673026187
+[23:22:37] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:22:56] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:23:02] [Server thread/INFO]: Hymic issued server command: /invsee d
+[23:23:07] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:23:54] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:24:41] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:24:51] [Server thread/INFO]: Hymic issued server command: /warp base
+[23:24:51] [Server thread/WARN]: Hymic moved too quickly! 20.788610574163613,14.0,-24.026240473644066
+[23:24:51] [Server thread/WARN]: Hymic moved too quickly! 20.788610574163613,14.0,-24.026240473644066
+[23:24:51] [Server thread/WARN]: Hymic moved too quickly! 20.788610574163613,14.0,-24.026240473644066
+[23:25:03] [Server thread/INFO]: Hymic issued server command: /tp diorcat
+[23:25:03] [Server thread/WARN]: Hymic moved too quickly! -4.180844521033123,-13.6875,10.39381561713617
+[23:25:05] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:25:20] [Server thread/INFO]: Hymic issued server command: /i sea_lantern 1
+[23:25:27] [Server thread/INFO]: Hymic issued server command: /i sea_lantern 8
+[23:25:32] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:25:33] [Server thread/INFO]: Hymic issued server command: /warp base
+[23:25:33] [Server thread/WARN]: Hymic moved too quickly! 21.44123907187941,14.0,-24.22233079222042
+[23:25:33] [Server thread/WARN]: Hymic moved too quickly! 21.44123907187941,14.0,-24.22233079222042
+[23:25:33] [Server thread/WARN]: Hymic moved too quickly! 21.44123907187941,14.0,-24.22233079222042
+[23:25:40] [Server thread/INFO]: Hymic issued server command: /tp diorcat
+[23:25:40] [Server thread/WARN]: Hymic moved too quickly! -7.301586346278327,-11.4375,7.605172105691054
+[23:26:02] [Server thread/INFO]: Hymic issued server command: /warp barn
+[23:26:02] [Server thread/WARN]: Hymic moved too quickly! 108.41847932551991,21.0,-20.442666826884306
+[23:26:02] [Server thread/WARN]: Hymic moved too quickly! 108.41847932551991,21.0,-20.442666826884306
+[23:26:02] [Server thread/WARN]: Hymic moved too quickly! 108.41847932551991,21.0,-20.442666826884306
+[23:26:02] [Server thread/WARN]: Hymic moved too quickly! 108.41847932551991,21.0,-20.442666826884306
+[23:26:02] [Server thread/WARN]: Hymic moved too quickly! 108.41847932551991,21.0,-20.442666826884306
+[23:26:02] [Server thread/WARN]: Hymic moved too quickly! 108.41847932551991,21.0,-20.442666826884306
+[23:26:02] [Server thread/WARN]: Hymic moved too quickly! 108.41847932551991,21.0,-20.442666826884306
+[23:26:02] [Server thread/WARN]: Hymic moved too quickly! 108.41847932551991,21.0,-20.442666826884306
+[23:26:02] [Server thread/WARN]: Hymic moved too quickly! 108.41847932551991,21.0,-20.442666826884306
+[23:26:02] [Server thread/WARN]: Hymic moved too quickly! 108.41847932551991,21.0,-20.442666826884306
+[23:26:02] [Server thread/WARN]: Hymic moved too quickly! 108.41847932551991,21.0,-20.442666826884306
+[23:26:06] [Server thread/INFO]: Hymic issued server command: /back
+[23:26:06] [Server thread/WARN]: Hymic moved too quickly! -105.0264665850832,-21.0,11.202891835763694
+[23:26:06] [Server thread/WARN]: Hymic moved too quickly! -105.0264665850832,-21.0,11.202891835763694
+[23:26:06] [Server thread/WARN]: Hymic moved too quickly! -105.0264665850832,-21.0,11.202891835763694
+[23:26:06] [Server thread/WARN]: Hymic moved too quickly! -105.0264665850832,-21.0,11.202891835763694
+[23:26:06] [Server thread/WARN]: Hymic moved too quickly! -105.0264665850832,-21.0,11.202891835763694
+[23:26:06] [Server thread/WARN]: Hymic moved too quickly! -105.0264665850832,-21.0,11.202891835763694
+[23:26:06] [Server thread/WARN]: Hymic moved too quickly! -105.0264665850832,-21.0,11.202891835763694
+[23:26:06] [Server thread/WARN]: Hymic moved too quickly! -105.0264665850832,-21.0,11.202891835763694
+[23:26:09] [Server thread/INFO]: Hymic issued server command: /save-all
+[23:26:09] [Server thread/INFO]: [Hymic: Saved the game]
+[23:26:31] [Server thread/INFO]: diorcat issued server command: /warp littlejonny
+[23:26:31] [Server thread/WARN]: diorcat moved too quickly! -3.246835202181046,29.0,35.58849863438081
+[23:26:40] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:27:01] [Server thread/INFO]: Hymic issued server command: /gmc
+[23:27:03] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:27:23] [Server thread/INFO]: Hymic issued server command: /gsm
+[23:27:24] [Server thread/INFO]: Hymic issued server command: /gms
+[23:27:26] [Server thread/INFO]: Hymic issued server command: /invsee d
+[23:27:35] [Server thread/INFO]: diorcat issued server command: /warp base
+[23:27:39] [Server thread/INFO]: diorcat issued server command: /thru
+[23:27:50] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:28:02] [Server thread/INFO]: diorcat issued server command: /thru
+[23:28:17] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:28:35] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:29:41] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:29:53] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:30:08] [Server thread/INFO]: diorcat issued server command: /invsee
+[23:30:10] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:30:23] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:30:36] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:31:14] [Server thread/INFO]: Hymic issued server command: /i stone 1
+[23:31:21] [Server thread/INFO]: Hymic issued server command: /i stone 1
+[23:31:29] [Server thread/INFO]: Hymic issued server command: /i stone_bricks 1
+[23:31:46] [Server thread/INFO]: Hymic issued server command: /i cobblestone_slab 1
+[23:32:08] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:32:14] [Server thread/INFO]: Hymic issued server command: /i stonebrickslab 2
+[23:32:21] [Server thread/INFO]: Hymic issued server command: /i stonebrickslab 2
+[23:32:27] [Server thread/INFO]: Hymic issued server command: /i cobblestoneslab 1
+[23:32:45] [Server thread/INFO]: diorcat issued server command: /thru
+[23:32:56] [Server thread/INFO]: diorcat issued server command: /invsee h
+[23:32:57] [Server thread/INFO]: Hymic issued server command: /i deadbush 1
+[23:33:41] [Server thread/INFO]: Hymic lost connection: Disconnected
+[23:33:41] [Server thread/INFO]: Hymic left the game
+[23:33:44] [Server thread/INFO]: diorcat lost connection: Disconnected
+[23:33:44] [Server thread/INFO]: diorcat left the game
+[23:33:58] [Server thread/INFO]: Stopping the server
+[23:33:58] [Server thread/INFO]: Stopping server
+[23:33:58] [Server thread/INFO]: [AngelChest] Disabling AngelChest v11.1.3
+[23:33:58] [Server thread/INFO]: [ChatItem] Disabling ChatItem v2.6.2
+[23:33:58] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.28
+[23:33:58] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.21.0-dev+144-d31ff55
+[23:33:58] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.6.0-SNAPSHOT
+[23:33:58] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[23:33:58] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[23:33:58] [Server thread/INFO]: [GSit] Disabling GSit v1.9.1
+[23:33:58] [Server thread/INFO]: [GSit] The plugin was successfully disabled.
+[23:33:58] [Server thread/INFO]: [NoEndermanGrief] Disabling NoEndermanGrief v1.14_1.0.9
+[23:33:58] [Server thread/INFO]: [NoEndermanGrief]  v1.14_1.0.9 is DISABLED
+[23:33:58] [Server thread/INFO]: [OfflineGrowthPro] Disabling OfflineGrowthPro v2.0.3
+[23:33:58] [Server thread/INFO]: [VeinMiner] Disabling VeinMiner v2.2.4
+[23:33:58] [Server thread/INFO]: [VeinMiner] Clearing localized data
+[23:33:58] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
+[23:33:58] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[23:33:58] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+144-d31ff55
+[23:33:58] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.131
+[23:33:58] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[23:33:58] [Server thread/INFO]: [LuckPerms] Closing storage...
+[23:33:58] [Server thread/INFO]: [LuckPerms] Goodbye!
+[23:33:58] [Server thread/INFO]: Saving players
+[23:33:59] [Server thread/INFO]: Saving worlds
+[23:33:59] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[23:33:59] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[23:33:59] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[23:33:59] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[23:33:59] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 2 entity chunks, 0 poi chunks in world 'world' in 0.00s
+[23:33:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[23:33:59] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[23:33:59] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[23:33:59] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[23:33:59] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[23:33:59] [Server thread/INFO]: [ChunkHolderManager] Saved 2 block chunks, 23 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
+[23:33:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23:33:59] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[23:33:59] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[23:33:59] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[23:33:59] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[23:33:59] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 11 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
+[23:33:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23:33:59] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[23:33:59] [Server thread/INFO]: Flushing Chunk IO
+[23:33:59] [Server thread/INFO]: Closing Thread Pool
+[23:33:59] [Server thread/INFO]: Closing Server

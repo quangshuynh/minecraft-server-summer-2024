@@ -5212,5 +5212,11 @@
     },
     "done": true
   },
+  "minecraft:husbandry/fishy_business": {
+    "criteria": {
+      "salmon": "2024-12-21 23:03:25 -0500"
+    },
+    "done": true
+  },
   "DataVersion": 3839
 }
