@@ -18,29 +18,32 @@
 
 # The following permissions are available:
 #
-# angelchest.use             Spawns AngelChest on death instead of dropping the items
-# angelchest.protect         The AngelChest is locked for other players
-# angelchest.protect.ignore  Players can open other player's locked AngelChests
-# angelchest.fetch           Allows the player to teleport their chests to them
-# angelchest.tp              The player can teleport to their AngelChests
-# angelchest.preview         Allows the player to preview their AngelChests' contents in /acgui
-# angelchest.toggle          Allows to enable/disable AngelChest per player
-# angelchest.others          Allows to run /actoggle, /aclist, /actp, /acfetch and /acunlock for other players
-# angelchest.reload          Allows reloading the config using /acreload
-# angelchest.debug           Allows to use the debug command /acdebug
-# angelchest.version         Allows to use the version command /acversion
+# angelchest.use                    Spawns AngelChest on death instead of dropping the items
+# angelchest.protect                The AngelChest is locked for other players
+# angelchest.protect.ignore         Players can open other player's locked AngelChests
+# angelchest.fetch                  Allows the player to teleport their chests to them
+# angelchest.tp                     The player can teleport to their AngelChests
+# angelchest.preventvictimchest     Prevents players getting killed by this player to get an AngelChest spawned
+# angelchest.preview                Allows the player to preview their AngelChests' contents in /acgui
+# angelchest.toggle                 Allows to enable/disable AngelChest per player
+# angelchest.ignorepreventbuilding  Allows to build in the radius around other player's AngelChests (see prevent-building-in-radius)
+# angelchest.others                 Allows to run /actoggle, /aclist, /actp, /acfetch and /acunlock for other players
+# angelchest.reload                 Allows reloading the config using /acreload
+# angelchest.debug                  Allows to use the debug command /acdebug
+# angelchest.version                Allows to use the version command /acversion
 
 # The following permissions are given to everyone by default:
 #
 # angelchest.list            Allows to use the list command /aclist (also requires angelchest.use)
 # angelchest.gui             Allows to use the GUI command /acgui (also requires angelchest.use)
 # angelchest.unlock          Allows the player to unlock their protected chests using /acunlock
+# angelchest.open            Allows the player to open a nearby AngelChest using /acopen
 
 #############################
-#####     Commands      #####
+#####  Player Commands  #####
 #############################
 
-# The following commands are available:
+# The following player commands are available:
 #
 # /acgui                     Permission: angelchest.use
 #                            Opens the AngelChest GUI, listing all your AngelChests with buttons for teleporting to,
@@ -49,6 +52,9 @@
 # /aclist                    Permission: angelchest.use
 #                            Shows a list of your AngelChests, including links for teleporting to, fetching and
 #                            unlocking each chest. This is basically the "chat-only" version of /acgui
+#
+# /acopen                    Permission: angelchest.open (and angelchest.open.<distance>)
+#                            Opens a nearby AngelChest without having to physically interact with it.
 #
 # /acfetch [chestID]         Permission: angelchest.fetch
 #                            Teleports one of the chests to the player
@@ -62,6 +68,33 @@
 # /actoggle [player]         Permission: angelchest.toggle
 #                            Enables/disables AngelChest for this player.
 #                            Also requires permission angelchest.others when changing other player's settings.
+
+#############################
+#####  Admin Commands   #####
+#############################
+
+# The following player commands can also be used by admins/console to specify a target player:
+#
+# /aclist <chestOwner>                                Permissions: angelchest.use and angelchest.others
+#                                                     Shows a list of <chestOwner>'s AngelChests, including links for
+#                                                     teleporting to, fetching and unlocking each chest.
+#
+# /acfetch <chestOwner> <chestId> [targetPlayer]      Permissions: angelchest.fetch and angelchest.others
+#                                                     Teleports one of <chestOwner>'s chests to [targetPlayer], or to
+#                                                     the command sender if [targetPlayer] is not specified. If ran
+#                                                     from console and [targetPlayer] is not specified, the chest will
+#                                                     be teleported to its owner.
+#
+# /actp <chestOwner> <chestId> [targetPlayer]         Permissions: angelchest.tp and angelchest.others
+#                                                     Teleports [targetPlayer] to one of <chestOwner>'s chests, or to
+#                                                     the command sender if [targetPlayer] is not specified. If ran
+#                                                     from console and [targetPlayer] is not specified, the chest owner
+#                                                     will be teleported.
+#
+# /acunlock <chestOwner> <chestId>                    Permissions: angelchest.protect, angelchest.unlock and angelchest.others
+#                                                     Unlocks one of <chestOwner>'s AngelChests
+
+# The following admin commands are available:
 #
 # /acgraveyard               Permission: angelchest.admin
 #                            Manage graveyard settings
@@ -98,6 +131,8 @@
 #
 # PlaceholderAPI works in most messages, but not all. Let me know when I missed a message.
 # ItemsAdder emojis & similar features from other plugins should also work, if not: https://discord.jeff-media.com :)
+#
+# AngelChest also has builtin PlaceholderAPI placeholders, see here: https://github.com/mfnalex/AngelChest/blob/master/PlaceholderAPI.md
 
 ############################
 ##### General settings #####
@@ -195,6 +230,11 @@ spawn-chance: 1.0
 # PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
 random-item-loss: 0
 
+# When false, random-item-loss deletes full stacks (e.g. you have one full stack of cobblestone, and one full stack dirt,
+# and random-item-loss is "0.5p", then one of those stacks will be deleted fully.
+# If true, the stacks will be split and you will lose e.g. 40 cobblestone and 22 dirt.
+random-item-loss-split-stacks: false
+
 # When true, all items that would be lost due to "random-item-loss" will be dropped instead of just be removed
 random-item-loss-drop: false
 
@@ -245,8 +285,8 @@ only-show-gui-after-death-if-player-can-tp-or-fetch: true
 # e.g. CHEST, ENDER_CHEST, OBSIDIAN, ...
 # It's also possible to use custom heads here, or custom blockdata, or even blocks from ItemsAdder and Oraxen.
 #
-# IMPORTANT: ItemsAdder & Oraxen integration is still EXPERIMENTAL and WILL bug out for furniture!
-#            Do NOT use ItemsAdder or Oraxen blocks and/or furniture on a production server!
+# Note for ItemsAdder users: ItemsAdder blocks are 100% supported! ItemsAdder furniture is experimental.
+# Note for Oraxen users: Oraxen blocks and Oraxen furniture are 100% supported!
 #
 # IMPORTANT: You must use "double quotes" here!
 #
@@ -255,7 +295,7 @@ only-show-gui-after-death-if-player-can-tp-or-fetch: true
 #  material: "head:player"                              (will use the player's head)
 #  material: "head:somebase64string"                    (will use that custom base64 texture)
 #  material: "minecraft:red_candle[candles=3,lit=true]" (will use 3 red, lit candles)
-#  material: "itemsadder:ruby_ore"                      (will use Ruby Ore from ItemsAdder)
+#  material: "itemsadder:iasurvival:ruby_ore"           (will use Ruby Ore from ItemsAdder)
 #  material: "oraxen:ruby_ore"                          (will use Ruby Ore from Oraxen)
 material: "CHEST"
 
@@ -297,17 +337,17 @@ prohibit-auto-equip: false
 # as that would destroy those blocks. You can blacklist them here so AngelChest searches
 # for a spot nearby.
 dont-spawn-on:
-  - FARMLAND
-  - GRASS_PATH
-  - DIRT_PATH
-  - LAVA
+- FARMLAND
+- GRASS_PATH
+- DIRT_PATH
+- LAVA
 
 # You can specify inside which existing blocks the AngelChest may spawn. If the block where
 # the player died is not in this list, AngelChest searches for a spot nearby.
 only-spawn-in:
-  - AIR
-  - WATER
-  - SNOW
+- AIR
+- WATER
+- SNOW
 
 # When the block where the player died doesn't match "dont-spawn-on" and "only-spawn-in"
 # we will search for another block inside max-radius. Default is 10 blocks.
@@ -374,12 +414,30 @@ check-for-updates: true
 # When check-for-updates is true, AngelChest will check every X hours
 check-interval: 24
 
+###########################################
+#### Prevent building near AngelChests ####
+###########################################
+
+# When higher than 0, players cannot place blocks within this radius around other player's AngelChests
+# Players with permission "angelchest.ignorepreventbuilding" are not affected by this
+prevent-building-in-radius: 0
+
+# When higher than 0, players cannot break blocks within this radius around other player's AngelChests
+# Players with permission "angelchest.ignorepreventbuilding" are not affected by this
+prevent-breaking-in-radius: 0
+
+# When true, "prevent-building-in-radius" and "prevent-breaking-in-radius" only applies to protected chests.
+# When false, it applies to unlocked chests too
+only-prevent-building-in-radius-for-protected-chests: true
+
 #########################
 ####   Death maps    ####
 #########################
 
 # You can make players get a map with their AngelChest location when they respawn.
 # This allows them to easily go back to their death location.
+# Note: If you still get death maps, even though this option is set to false, you probably have another plugin
+# causing this (ItemsAdder maybe?).
 # PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
 death-maps: false
 
@@ -391,7 +449,7 @@ dispose-death-maps: false
 # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/map/MapCursor.Type.html
 death-map-marker: RED_X
 
-death-map-name: "AngelChest"
+death-map-name: AngelChest
 death-map-lore: "X: {x}\nY: {y}\nZ: {z}"
 
 #########################
@@ -399,10 +457,11 @@ death-map-lore: "X: {x}\nY: {y}\nZ: {z}"
 #########################
 
 # You can have AngelChest drop the player's head when they die.
+# Important: If you want to use a player head for the chest itself, see the "material" option instead.
 # Note: The head will only drop if the player has an AngelChest spawned.
 # That means that no heads will drop when the player does not have the
 # angelchest.use permission, if they don't have enough money for the chest,
-# or if they die in a blacklisted world / region.
+# or if they die in a blacklisted world / region etc.
 # PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
 drop-heads: false
 
@@ -415,6 +474,13 @@ only-drop-heads-in-pvp-cooldown: 10
 
 # When set to true, heads are dropped next to the AngelChest instead of being put inside
 dont-store-heads-in-angelchest: true
+
+# The head's name and lore. Set to an empty string ("") to disable.
+# You can use any PAPI placeholder and the following placeholders:
+#   {player}       Name of the player who died
+#   {deathcause}   Name of the killer, or LAVA, VOID etc. when not killed in PvP
+head-name: "{player}'s head"
+head-lore: "Brutally murdered\nby {deathcause}"
 
 #########################
 ####    Graveyards   ####
@@ -464,10 +530,18 @@ fallback-to-deathlocation: true
 # If you request a feature in the review section, it will probably be ignored.
 # You can also adjust those prices individually for each group. See groups.example.yml
 
-# You can also add the letter "p" to the end of the number to use percentages.
-# E.g. when using "0.2p", a user has to pay 20% of his account balance.
+###### Using Percentages/Min/Max Prices #####
+# In AngelChest Plus, you can also use percentages of the player's balance:
+#   price-example1: 50%              (50% of player's balance)
+#
+# It is also possible to define a minimum and/or maximum price:
+#   price-example2: 10%,min=1000             (10%, but at least 1000)
+#   price-example3: 50%,max=1000             (50%, but at most 10000)
+#   price-example4: 30%,min=500,max=10000    (30%, but at least 500 and at most 10000)
+#
 # PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
 
+###### Using Items instead of money #####
 # You can also use certain items that have to be "paid" with instead of money.
 # See items.yml file for more information
 # PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
@@ -524,13 +598,17 @@ price-format: "%,.2f"
 allow-tp-across-worlds: true
 allow-fetch-across-worlds: true
 
-# You can set a max distance for players who want to tp to or fetch their AngelChest.
+# You can set a max distance for players who want to tp or fetch their AngelChest.
 # If set to 0, players can teleport/fetch regardless of the distance to their chest.
 # When using this, consider to disallow TPing or fetching between worlds because
 # otherwise players could just bypass this by going into another world.
 # PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus! Free version will always use 0
 max-tp-distance: 0
 max-fetch-distance: 0
+
+# The maximum allowed distance for players to use /acopen. Can be overriden
+# using permission "angelchest.open.<distance>", e.g. "angelchest.open.5" for 5 blocks
+max-open-distance: 5
 
 # You can also set a minimum distance to avoid players teleporting to their chest or
 # fetching it, for example to avoid them accidentally clicking the link twice and
@@ -541,6 +619,10 @@ min-distance: 0
 # get teleported
 # PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
 tp-wait-time: 0
+
+# Which color to use for the teleportation bossbar.
+# See here for possible values: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/boss/BarColor.html
+tp-bossbar-color: GREEN
 
 #################################
 #### Sounds for TP / Fetch  #####
@@ -635,6 +717,11 @@ disable-worldguard-integration: false
 # Fetching chests into areas where players cannot build will also be prohibited.
 only-spawn-chests-if-player-may-build: false
 
+# When true, AngelChest additionally calls a BlockPlaceEvent to check if a player is allowed
+# to build at a certain location. Only enable this if "only-spawn-chests-if-player-may-build"
+# isn't working for you.
+only-spawn-chests-if-player-may-build-check-blockplaceevent: false
+
 #########################
 ##    Other plugins    ##
 #########################
@@ -703,6 +790,11 @@ use-worldborder-api: true
 
 # When true, players who are currently in combat cannot fast-loot AngelChests
 combatlogx-prevent-fastlooting: false
+
+# Placement settings when using oraxen furniture as chest material
+# See here for valid BlockFaces: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/BlockFace.html
+oraxen-furniture-yaw: 0
+oraxen-furniture-face: DOWN
 
 # You can define the priority on which AngelChest detects the player's drops. When you use plugins to
 # manipulate what items a player drops on death, consider setting this to a high value (e.g. HIGHEST
@@ -789,6 +881,32 @@ hologram-offset: 0.0
 hologram-offset-per-line: 0.25
 
 #########################
+#####   Charges    ######
+#########################
+
+# PREMIUM FEATURE: ONLY AVAILABLE IN AngelChest Plus!
+
+# When the Charges System is enabled, players require a "Charge" to get an AngelChest spawned.
+# Charges are like a virtual currency and can be currently only acquired through the /acadmin command, so you
+# can sell them to players or give them away as rewards, or whatever.
+
+# When a player dies, they will be charged one charge for the chest to spawn.
+# When they don't have a charge, the chest will not spawn and the items will drop normally.
+
+# Additional settings you have set still apply though, so if you set a price for the chest to spawn,
+# they still have to pay that amount. A charge will only be used if the chest successfully spawned.
+
+# Commands available (also work for offline Players if they have played before):
+# /acadmin charges get <player>             - Get the amount of charges a player has
+# /acadmin charges set <player> <amount>    - Set the amount of charges a player has
+# /acadmin charges add <player> <amount>    - Add charges to a player
+# /acadmin charges remove <player> <amount> - Remove charges from a player
+
+# If this system is disabled, no charges will be required.
+
+enable-charges-system: false
+
+#########################
 #####     GUI      ######
 #########################
 
@@ -831,11 +949,12 @@ gui-chest-lore: "§4{time}\n§aX: §f{x}\n§aY: §f{y}\n§aZ: §f{z}\n§f{world}
 
 ##### Inventory title in GUI after selecting a specific chest
 # {id} is the number of the chest
+# {player} is the owner's name
 # {time} is the amount of time left
 gui-title-chest: "&4&l[&c&lAngelChest&4&l] &c#{id} &4| &c{time}"
 
 ##### Chest inventory name
-# {player} is the player's name.
+# {player} is the owner's name
 angelchest-inventory-name: "&4&l[&c&lAngelChest&4&l] &b{player}&r"
 
 ##### Button names and lore
@@ -890,49 +1009,73 @@ prefix: "&b[&aAngelChest&b] &r"
 
 # Commands that can be used instead of /acgui
 command-aliases-acgui:
-  - angelchestgui
+- angelchestgui
 
 # Commands that can be used instead of /aclist
 command-aliases-aclist:
-  - acinfo
-  - ac
-  - angelchest
-  - angelchestinfo
-  - angelchestlist
+- acinfo
+- ac
+- angelchest
+- angelchestinfo
+- angelchestlist
+
+command-aliases-acopen:
+- angelchestopen
 
 # Commands that can be used instead of /acfetch
 command-aliases-acfetch:
-  - acretrieve
-  - angelchestfetch
-  - angelchestretrieve
+- acretrieve
+- angelchestfetch
+- angelchestretrieve
 
 # Commands that can be used instead of /actp
 command-aliases-actp:
-  - acteleport
-  - angelchesttp
-  - angelchestteleport
+- acteleport
+- angelchesttp
+- angelchestteleport
 
 # Commands that can be used instead of /acunlock
 command-aliases-acunlock:
-  - angelchestunlock
-  - unlockchest
-  - unlock
+- angelchestunlock
+- unlockchest
+- unlock
 
 # Commands than can be used instead of /actoggle.
 command-aliases-actoggle:
-  - angelchesttoggle
+- angelchesttoggle
 
 # Commands that can be used instead of /acreload
 command-aliases-acreload:
-  - angelchestreload
+- angelchestreload
 
 # Commands that can be used instead of /acdebug
 command-aliases-acdebug:
-  - acd
+- acd
 
 #########################
 #####     Misc      #####
 #########################
+
+# When set to true, the AngelChest will be placed at the exact location where the player died + the given offset ("absolute mode")
+# When set to "false", the offset will be applied to the adjusted chest location (after void fixing, etc.) ("relative mode")
+fixed-chest-offset: false
+fixed-chest-offset-value-x: 0
+fixed-chest-offset-value-y: 0
+fixed-chest-offset-value-z: 0
+
+# Interval between checking if a block has changed after the chest has been placed
+block-change-check-tick-interval: 40
+
+# When true, AngelChest will always set a chest's blockstate to its original blockstate when despawning a chest,
+# even if the block has changed meanwhile. This should only happen if /setblock is used, or if another plugin replaces
+# the chest's block.
+always-reset-block-to-original: false
+
+# When true, AngelChest will move the chest one block up if the chest's block has been replaced with another block
+# after the chest was created. This should only happen if /setblock is used, or if another plugin replaces
+# the chest's block.
+# If the chest already is at the highest possible building height, the chest will stay at its current location.
+move-chest-when-block-gets-changed: false
 
 # Whether to show a console message when a player opens an AngelChest
 console-message-on-open: false
@@ -962,6 +1105,10 @@ log-filename: "{player}_{world}_{date}.log"
 # {world}        - World nane
 # {x}, {y}, {z}  - Coordinates
 chest-filename: "{player}_{world}_{x}_{y}_{z}.yml"
+
+# Undocumented settings
+tp-distance: 2
+tp-no-safe-space-y-offset: 1
 
 #########################
 #####   Messages   ######
@@ -1014,6 +1161,10 @@ message-has-no-item: "&cYou need at least one {item}&r&c to do this."
 message-has-no-item2: "&cAn Angel tried to collect your stuff but you didn't have any {item}&r&c."
 message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 #########################
 ##### Translations ######
@@ -1071,6 +1222,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cAn Angel tried to collect your stuff but you didn't have any {item}&r&c."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### Azerbaijan Turkish
 #message-all-your-angelchests-were-already-unlocked: "&eBütün AngelChest'lərinin kilidi onsuzda açıqdır."
@@ -1119,6 +1274,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cAn Angel tried to collect your stuff but you didn't have any {item}&r&c."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### Bulgarian
 #message-all-your-angelchests-were-already-unlocked: "&eВсичките Ваши AngelChests са вече отключени."
@@ -1168,7 +1327,11 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cАнгелът се опита да събере Вашите предмети, но Вие нямахте никакви {item}&r&c."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
- 
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
+
 ##### Chinese Simplified 简体中文
 #message-all-your-angelchests-were-already-unlocked: "&e你所有的天使之箱都已解锁."
 #message-angelchest-created: "&a一位善良的天使捡起了你的物品并放到了你死亡地点附近的箱子内."
@@ -1217,6 +1380,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cAn Angel tried to collect your stuff but you didn't have any {item}&r&c."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### Chinese Traditional 繁體中文
 #message-all-your-angelchests-were-already-unlocked: "&e所有的天使之箱已被解鎖"
@@ -1266,6 +1433,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&c一個天使嘗試收集你的掉落物，但你缺少{item}&r&c."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### Czech
 #message-all-your-angelchests-were-already-unlocked: "&eVšechny tvé hroby byly již odemčeny."
@@ -1315,6 +1486,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cAnděl se pokusil sesbírat tvé věci, ale neměl(a) jsi {item}&r&c."
 #message-cooldown: "&cAnděl se pokusil sesbírat tvé věci, ale byl stále příliš unaven, aby to udělal."
 #message-pvp-cooldown: "&cAnděl se pokusil sesbírat tvé věci, ale byl stále příliš unaven, aby to udělal."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### Danish 
 #message-all-your-angelchests-were-already-unlocked: "&eAlle dine AngelChests var allerede låst op."
@@ -1364,6 +1539,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cEn engel prøvede at samle dine ting, men du havde ingen {item}&r&c."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### Dutch
 #message-all-your-angelchests-were-already-unlocked: "&eAlle AngelChests die je hebt zijn al ontgrendeld"
@@ -1413,6 +1592,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cEen Engel probeerde je spullen te verzamelen maar je had geen {item}&r&c."
 #message-cooldown: "&cEen Engel probeerde je spullen te verzamelen maar was nog te moe om dat te doen."
 #message-pvp-cooldown: "&cEeen Engel probeerde je spullen te verzamelen maar was nog te moe om dat te doen."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### French - Thanks to AngelCynara for translating! -> https://www.spigotmc.org/members/angelcynara.398643/
 #message-all-your-angelchests-were-already-unlocked: "&eTout vos AngeCoffres sont débloqués."
@@ -1462,6 +1645,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cUn ange aura récolté ton matos sans toutefois trouver ceci : {item}&r&c."
 #message-cooldown: "&cUn ange aura tenté de sauver ton matos mais la fatigue eu raison de lui."
 #message-pvp-cooldown: "&cUn ange aura essayé de préserver ton matos mais épuisé, il échoua."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### German
 #message-all-your-angelchests-were-already-unlocked: "&eAlle deine AngelChests waren bereits aufgeschlossen."
@@ -1511,6 +1698,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cEin Engel hat versucht deine Sachen einzusammeln, aber du hattest nicht genug {item}&r&c."
 #message-cooldown: "&cEin Engel hat versucht deine Sachen einzusammeln, war aber noch zu müde"
 #message-pvp-cooldown: "&cEin Engel hat versucht deine Sachen einzusammeln, war aber noch zu müde."
+#message-cant-build-in-radius: "&cDu kannst in der Nähe von fremden AngelChests keine Blöcke platzieren."
+#message-no-charges-left: "&cEin Engel hat versucht deine Sachen einzusammeln, aber du hattest keine Aufladungen mehr."
+#message-cant-build: "&cEin Engel hat versucht deine Sachen einzusammeln, aber konnte den Ort nicht betreten."
+#message-no-chest-nearby: "&cEs ist keine AngelChest in der Nähe."
 
 ##### Hungarian
 # message-all-your-angelchests-were-already-unlocked: "&eAz összes AngyalLádád már fel van oldva."
@@ -1560,6 +1751,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cAn Angel tried to collect your stuff but you didn't have any {item}&r&c."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### Indonesian
 #message-all-your-angelchests-were-already-unlocked: "&eSemua AngelChest kamu sudah tidak terkunci."
@@ -1609,55 +1804,64 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cAn Angel tried to collect your stuff but you didn't have any {item}&r&c."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
-##### Italian
-#message-all-your-angelchests-were-already-unlocked: "&eTutte le tue AngelChests sono già state sbloccate."
+##### Italian - Thanks to Polkanizki for translating!
+#message-all-your-angelchests-were-already-unlocked: "&eTutte le tue AngelChest sono già state sbloccate."
 #message-angelchest-created: "&aUn Angelo ha raccolto le tue cose e le ha messe dove sei morto."
 #message-angelchest-disappeared: "&cSei stato troppo lento... La tua AngelChest è scomparsa ed il suo contenuto è stato lasciato a terra."
 #message-error-players-only: "&cErrore: Questo comando può essere eseguito solo dai giocatori."
 #message-inventory-was-empty: "&eUn Angelo ha cercato le tue cose ma non è riuscito a trovare nulla."
-#message-not-allowed-to-break-other-angelchests: "&cYou are not allowed to break this AngelChest."
-#message-not-allowed-to-open-other-angelchests: "&cYou are not allowed to open this AngelChest."
-#message-unlocked-more-angelchests: "&aHai sbloccato le tue %d AngelChests."
+#message-not-allowed-to-break-other-angelchests: "&cNon puoi rompere questa AngelChest."
+#message-not-allowed-to-open-other-angelchests: "&cNon puoi aprire questa AngelChest."
+#message-unlocked-more-angelchests: "&aHai sbloccato le tue %d AngelChest."
 #message-unlocked-one-angelchest: "&aHai sbloccato la tua AngelChest."
-#message-you-dont-have-any-angelchests: "&eNon hai nessuna AngelChests."
+#message-you-dont-have-any-angelchests: "&eNon hai nessuna AngelChest."
 #message-you-got-part-of-your-inventory-back: "&eHai ricevuto alcune delle tue cose indietro, ma ce ne sono ancora alcune nella tua AngelChest."
 #message-you-got-your-inventory-back: "&aHai ricevuto il tuo inventario!"
-#message-angelchest-location: "&eEcco dove sono le tue AngelChests:"
+#message-angelchest-location: "&eEcco dove sono le tue AngelChest:"
 #message-not-enough-money: "&cNon hai abbastanza soldi."
-#message-not-enough-money2: "&cAn Angel tried to collect your stuff but you didn't have enough money."
-#message-please-select-chest: "&7Per piacere, specifica quale AngelChest vuoi selezionare."
+#message-not-enough-money2: "&cUn Angelo ha provato a prendere le tue cose ma non hai abbastanza soldi."
+#message-please-select-chest: "&7Per favore, specifica quale AngelChest vuoi selezionare."
 #message-already-unlocked: "&cQuesta AngelChest è già stata sbloccata."
-#message-too-many-angelchests: "&cYou had more AngelChests than your Angel could handle... Your oldest AngelChest has exploded."
-#message-no-angelchest-in-pvp: "&cAn Angel tried to collect your stuff but was put to flight by the presence of your killer."
-#message-angelchest-retrieved: "&aAngelChest retrieved!"
-#message-confirm: "&6You are about to spend {price}{currency}. Click this message to continue."
-#message-paid-open: "&8You spent {price}{currency} to open an AngelChest."
-#message-unlocked-automatically: "&8Your AngelChest has been unlocked automatically."
-#message-angelchest-opened: "&6{player} has opened your AngelChest."
-#message-angelchest-emptied: "&c{player} has emptied your AngelChest."
-#message-spawn-chance-unsuccessful: "&cYour Angel forgot to collect your stuff, unlucky!"
-#message-no-permission: "&cYou do not have the permission to use this command."
-#message-invulnerable: "&a&lYou are invulnerable for {time}."
-#message-vulnerable: "&c&lYou are no longer invulnerable."
-#message-tp-across-worlds-not-allowed: "&cYou cannot teleport to your AngelChest across worlds."
-#message-fetch-across-worlds-not-allowed: "&cYou cannot fetch your AngelChest across worlds."
-#message-max-tp-distance: "&cYou cannot teleport to AngelChests more than {distance} blocks away."
-#message-max-fetch-distance: "&cYou cannot fetch AngelChests more than {distance} blocks away."
-#message-angelchest-disabled: "&cYou are no longer protected by Angels."
-#message-angelchest-enabled: "&aYou are now protected by Angels."
-#message-angelchest-fetched: "&aAngelChest fetched succesfully."
-#message-angelchest-teleported: "&aSuccessfully teleported you to your AngelChest."
-#message-min-distance: "&cYou already are nearby your AngelChest."
-#message-buried-in-graveyard: "&aAn Angel collected your stuff and buried it at &6{graveyard}."
-#message-cant-fetch-here: "&cYou cannot fetch your AngelChest here."
-#message-teleporting: "&aTeleporting to AngelChest..."
-#message-angelchest-disabled-others: "&c{player} is no longer protected by Angels."
-#message-angelchest-enabled-others: "&a{player} is now protected by Angels."
-#message-has-no-item: "&cYou need at least one {item}&r&c to do this."
-#message-has-no-item2: "&cAn Angel tried to collect your stuff but you didn't have any {item}&r&c."
-#message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
-#message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+#message-too-many-angelchests: "&cHai più AngelChest di quanto il tuo Angelo potrebbe gestire... La tua AngelChest meno recente è esplosa."
+#message-no-angelchest-in-pvp: "&cUn Angelo ha provato a prendere le tue cose ma è stato messo in fuga dalla presenza del tuo assassino."
+#message-angelchest-retrieved: "&aAngelChest recuperata!"
+#message-confirm: "&6Stai per spendere {price}{currency}. Clicca questo messaggio per continuare."
+#message-paid-open: "&8Hai speso {price}{currency} per aprire una AngelChest."
+#message-unlocked-automatically: "&8La tua AngelChest è stata sbloccata automaticamente."
+#message-angelchest-opened: "&6{player} ha aperto la tua AngelChest."
+#message-angelchest-emptied: "&c{player} ha svuotato la tua AngelChest."
+#message-spawn-chance-unsuccessful: "&cIl tuo Angelo ha dimenticato di raccogliere le tue cose, che sfortuna!"
+#message-no-permission: "&cNon hai il permesso di utilizzare questo comando."
+#message-invulnerable: "&a&lSei invulnerabile per {time}."
+#message-vulnerable: "&c&lNon sei più invulnerabile."
+#message-tp-across-worlds-not-allowed: "&cNon puoi teletrasportarti alla tua AngelChest tra mondi diversi."
+#message-fetch-across-worlds-not-allowed: "&cNon puoi recuperare la tua AngelChest tra mondi diversi."
+#message-max-tp-distance: "&cNon puoi teletrasportarti alle AngelChest distanti più di {distance} blocchi."
+#message-max-fetch-distance: "&cNon puoi recuperare le AngelChest distanti più di {distance} blocchi."
+#message-angelchest-disabled: "&cNon sei più protetto dagli Angeli."
+#message-angelchest-enabled: "&aSei ora protetto dagli Angeli."
+#message-angelchest-fetched: "&aAngelChest recuperata con successo."
+#message-angelchest-teleported: "&aTeletrasportato con successo alla tua AngelChest."
+#message-min-distance: "&cSei già vicino alla tua AngelChest."
+#message-buried-in-graveyard: "&aUn Angelo ha raccolto le tue cose e le ha seppellite a &6{graveyard}."
+#message-cant-fetch-here: "&cNon puoi recuperare la tua AngelChest qui."
+#message-teleporting: "&aTeletrasporto all'AngelChest..."
+#message-angelchest-disabled-others: "&c{player} non è più protetto dagli Angeli."
+#message-angelchest-enabled-others: "&a{player} è ora protetto dagli Angeli."
+#message-has-no-item: "&cHai bisogno almeno di un {item}&r&c per farlo."
+#message-has-no-item2: "&cUn Angelo ha provato a prendere le tue cose ma non hai nessun {item}&r&c."
+#message-cooldown: "&cUn Angelo ha provato a prendere le tue cose ma era troppo stanco per farlo."
+#message-pvp-cooldown: "&cUn Angelo ha provato a prendere le tue cose ma era troppo stanco per farlo."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-cant-build-in-radius: "&cNon puoi posizionare blocchi vicini alle AngelChest di altri giocatori"
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### Pirate Speak
 #message-all-your-angelchests-were-already-unlocked: "&eAll yer AngelChests was already unlocked."
@@ -1673,7 +1877,7 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-you-got-part-of-your-inventory-back: "&eYe got a part o' yer inventory aft, but some items still in the AngelChest."
 #message-you-got-your-inventory-back: "&aYe got yer inventory aft!"
 #message-angelchest-location: "&eLocations o' yer AngelChests:"
-#message-not-enough-money: "&cYe don't 'ave enough money."
+#message-not-enough-money: "&cYe don't 'ave enough money."P
 #message-not-enough-money2: "&cAn Angel tried to collect yer stuff but ye did nay 'ave enough money."
 #message-please-select-chest: "&7Please specify which AngelChest ye would like to select."
 #message-already-unlocked: "&cThis AngelChest is already unlocked."
@@ -1707,6 +1911,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cAn Angel tried to collect your stuff but you didn't have any {item}&r&c."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect yer stuff but was still too tired to do so."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### Polish
 #message-all-your-angelchests-were-already-unlocked: "&eWszystkie twoje AnielskieSkrzynie zostały już odblokowane."
@@ -1756,6 +1964,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cAnioł próbował podnieść twoje itemy, lecz nie miałeś żadnego {item}&r&c."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### Portuguese
 #message-all-your-angelchests-were-already-unlocked: "&eTodos os seus Baús Angelicais já estavam destrancados."
@@ -1805,6 +2017,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cUm Anjo tentou coletar suas coisas, mas você não tinha nenhum {item}&r&c."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### Romanian (Română)
 #message-all-your-angelchests-were-already-unlocked: "Toate Angel Chest-urile tale au fost deja deblocate."
@@ -1854,6 +2070,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cAn Angel tried to collect your stuff but you didn't have any {item}&r&c."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect yer stuff but was still too tired to do so."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### Russian - Thanks to @GEEK for translating
 #message-all-your-angelchests-were-already-unlocked: "&eВсе ваши Ангельские сундуки разблокированы."
@@ -1903,7 +2123,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cАнгел пытался собрать твои вещи, но у вас не было {item}."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
-
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### Spanish Spain (es_ES)
 #message-all-your-angelchests-were-already-unlocked: "&eTodos tus Artefactos Angelicales se han desprotegido."
@@ -1953,6 +2176,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cAn Angel tried to collect your stuff but you didn't have any {item}&r&c."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### Spanish 2
 #message-all-your-angelchests-were-already-unlocked: "&eTodos tus AngelChest ya se encuentran desbloqueados."
@@ -2002,6 +2229,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cAn Angel tried to collect your stuff but you didn't have any {item}&r&c."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 ##### Swedish
 #message-all-your-angelchests-were-already-unlocked: "&eAlla dina AngelChests är redan upplåsta"
@@ -2050,8 +2281,12 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cEn Ängel försökte att samla dina saker men du hade inte någon {item}&r&c."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
-##### Turkish (Turkey Turkish)
+##### Turkish
 #message-all-your-angelchests-were-already-unlocked: "&eTüm AngelChest'lerinin kilidi zaten açık."
 #message-angelchest-created: "&aBir melek eşyalarını topladı ve öldüğün konumda ki bir sandığa koydu."
 #message-angelchest-disappeared: "&cÇok yavaştın... AngelChest'in yok oldu ve içindekileri yere bıraktı."
@@ -2098,6 +2333,10 @@ message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too 
 #message-has-no-item2: "&cAn Angel tried to collect your stuff but you didn't have any {item}&r&c."
 #message-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
 #message-pvp-cooldown: "&cAn Angel tried to collect your stuff but was still too tired to do so."
+#message-cant-build-in-radius: "&cYou cannot place blocks in the vicinity of other player's AngelChests."
+#message-no-charges-left: "&cAn Angel tried to collect your stuff but you didn't have any charges left."
+#message-cant-build: "&cAn Angel tried to collect your stuff but couldn't enter that place."
+#message-no-chest-nearby: "&cThere's no AngelChest nearby."
 
 #########################
 #####     Done!     #####
@@ -2108,5 +2347,5 @@ debug: false
 verbose: false
 
 # NEVER CHANGE THE VALUES BELOW!
-plugin-version: 11.1.3
-config-version: 202406021046
+plugin-version: 13.9.0
+config-version: 202410271102
