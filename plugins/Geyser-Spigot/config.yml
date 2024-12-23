@@ -20,7 +20,7 @@ bedrock:
   # Some hosting services change your Java port everytime you start the server and require the same port to be used for Bedrock.
   # This option makes the Bedrock port the same as the Java port every time you start the server.
   # This option is for the plugin version only.
-  clone-remote-port: false
+  clone-remote-port: true
   # The MOTD that will be broadcasted to Minecraft: Bedrock Edition clients. This is irrelevant if "passthrough-motd" is set to true
   # If either of these are empty, the respective string will default to "Geyser"
   motd1: "Geyser"
@@ -86,7 +86,7 @@ pending-authentication-timeout: 120
 
 # Bedrock clients can freeze when opening up the command prompt for the first time if given a lot of commands.
 # Disabling this will prevent command suggestions from being sent and solve freezing for Bedrock clients.
-command-suggestions: true
+command-suggestions: false
 
 # The following three options enable "ping passthrough" - the MOTD, player count and/or protocol name gets retrieved from the Java server.
 # Relay the MOTD from the remote server to Bedrock players.
@@ -115,7 +115,7 @@ debug-mode: false
 # https://cdn.discordapp.com/attachments/613170125696270357/957075682230419466/Screenshot_from_2022-03-25_20-35-08.png
 # This can be disabled by going into Bedrock settings under the accessibility tab and setting "Text Background Opacity" to 0
 # This setting can be set to "title", "actionbar" or "false"
-show-cooldown: title
+show-cooldown: actionbar
 
 # Controls if coordinates are shown to players.
 show-coordinates: true
