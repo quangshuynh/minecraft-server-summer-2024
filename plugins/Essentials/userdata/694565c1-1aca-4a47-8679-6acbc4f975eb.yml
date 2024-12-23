@@ -11,29 +11,29 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1734841566790
+  lastteleport: 1734922046088
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1734842021156
-  login: 1734839861654
+  logout: 1734922051046
+  login: 1734915750125
 money: '0'
 last-account-name: Hymic
 nickname: §2Quang
 lastlocation:
   world: ab0fadff-60ab-430f-b890-e8b58df931dd
   world-name: world
-  x: -2543.7793666318485
-  y: 71.0
-  z: 4295.801146504647
-  yaw: 36.36638641357422
-  pitch: 3.5452170372009277
+  x: -2633.7125955008237
+  y: 63.0
+  z: 4293.331260593729
+  yaw: 21.031341552734375
+  pitch: 4.6419477462768555
 logoutlocation:
   world: ab0fadff-60ab-430f-b890-e8b58df931dd
   world-name: world
-  x: -2651.2107986082083
-  y: 50.0
-  z: 4312.554896234103
-  yaw: 85.95712280273438
-  pitch: 29.88852882385254
+  x: -2633.535775771598
+  y: 63.0
+  z: 4290.816696446608
+  yaw: 84.56129455566406
+  pitch: 6.309488296508789
