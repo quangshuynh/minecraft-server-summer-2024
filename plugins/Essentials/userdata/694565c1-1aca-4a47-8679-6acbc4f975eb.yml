@@ -16,17 +16,17 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1734982831859
-  login: 1734976943806
+  logout: 1734990556708
+  login: 1734990329205
 money: '0'
 logoutlocation:
   world: ab0fadff-60ab-430f-b890-e8b58df931dd
   world-name: world
-  x: -2627.777460463578
-  y: 64.5625
-  z: 4287.973038539257
-  yaw: 31.379602432250977
-  pitch: 26.845029830932617
+  x: -2547.300000011921
+  y: -16.0
+  z: 4284.742517397267
+  yaw: 174.94027709960938
+  pitch: 28.293651580810547
 last-account-name: Hymic
 lastlocation:
   world: d6a4e861-bd37-407a-9327-fb54cd90136e
