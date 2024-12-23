@@ -3,6 +3,7 @@ main:
   prefix_hover: true # LagFixer version info hover
   threads: 1 # LagFixer does not have multithreading yet
   monitor_interval: 5 # update interval in seconds for tps, mspt, cpu and others
+  map_interval: 3 # update interval in seconds for map handler /lagfixer map (recommended value is at least 2 times higher than monitor_interval)
   errors_reporter: true # automatic reporting errors caused by LagFixer and Spark profiler to our support
   updater: true
   warnings: true # warning for legacy methods without support
@@ -16,10 +17,8 @@ main:
 modules:
   CustomAi: # restart is needed to load all changes
     enabled: true
-    worlds:
-    - world
-    - world_the_end
-    - world_nether
+    worlds: # add '*' to list to enable for all worlds
+      - '*'
     values:
       collides: true # bow arrow don't work when this option is false
       silent: true # disables the transmission of audio packets, which can increase server speed for large farms
@@ -35,6 +34,13 @@ modules:
         tameable: false # pets, for example: wolf, horse, cat, llama, parror etc. (true - may cause some issues)
         birds: false # flying entities, for example: bees, parrots
         others: true
+      
+      # list of ignored creatures, types: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+      # set [] to make this blacklist empty
+      blacklist:
+      - WOLF
+      - MOOSHROOM
+      - IRON_GOLEM
       
       pathfinder:
         # keep mobchip pathfinders wrapper, only for 1.17+ servers (not tested)
@@ -96,10 +102,10 @@ modules:
   
   CustomVehicles:
     enabled: true
-    worlds:
-    - world
-    - world_the_end
-    - world_nether
+    worlds: # add '*' to list to enable for all worlds
+      - world
+      - world_the_end
+      - world_nether
     values:
       minecart:
         enabled: true
@@ -119,10 +125,10 @@ modules:
   
   LagMonitor:
     enabled: true
-    worlds:
-    - world
-    - world_the_end
-    - world_nether
+    worlds: # add '*' to list to enable for all worlds
+      - world
+      - world_the_end
+      - world_nether
     values:
       needed_mspt: 75 # when the server has mspt above this value, the lagfixer will set the options listed below
       during_lags:
@@ -162,32 +168,46 @@ modules:
         - 'CONSOLE: Forcing save\.\..*'
         - 'CONSOLE: Save complete\..*'
   
-  AntiClock:
+  RedstoneLimiter:
     enabled: true
-    worlds:
-    - world
-    - world_the_end
-    - world_nether
+    worlds: # add '*' to list to enable for all worlds
+      - '*'
     values:
-      ticks_limit: 1100 # limit of ticks per chunk every second
-      break_redstone: false # should plugin break redstone
-      lever_cooldown: 700
+      alerts: true
+      ticks_limit: # limit of ticks per chunk every second
+        redstone: 1100
+        piston: 50 # sum of pushed blocks
+      break_block: # should lagfixer break blocks after detect
+        redstone: false
+        piston: false
+      piston:
+        push_blacklist: # list of materials: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+          - SAND
+          - RED_SAND
+          - GRAVEL
+      click_cooldown: 1500 # cooldown in ms for lever, buttons, redstone torch etc.
   
   EntityLimiter:
     enabled: true
-    worlds:
-    - world
-    - world_the_end
-    - world_nether
+    worlds: # add '*' to list to enable for all worlds
+      - '*'
     values:
       alerts: false
       perchunk:
         enabled: true
-        creatures: 15 # animals and monsters per chunk
-        items: 25 # dropped items by player per chunk
-        vehicles: 3 # minecarts and boats per chunk
+        creatures: 15 # animals and monsters per chunk (set -1 to disable)
+        items: 25 # dropped items by player per chunk (set -1 to disable)
+        vehicles: 3 # minecarts and boats per chunk (set -1 to disable)
+        projectiles: 5 # projectiles per chunk (set -1 to disable)
         tiles: 10 # disabled by developer
-      perworld:
+        reasons: # list of reasons: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/CreatureSpawnEvent.SpawnReason.html
+          - DEFAULT
+          - EGG
+          - NATURAL
+          - SPAWNER
+          - SPAWNER_EGG
+          - COMMAND
+      perworld: # option is operated by spigot
         enabled: true
         monsters: 70
         animals: 10
@@ -199,36 +219,39 @@ modules:
   
   WorldCleaner:
     enabled: true
-    worlds:
-    - world
-    - world_the_end
-    - world_nether
+    worlds: # add '*' to list to enable for all worlds
+      - world
+      - world_the_end
+      - world_nether
     values:
       interval: 240 # in seconds, countdown to run WorldCleaner
-      alerts: false # you can find in lang.yml
+      alerts: true # you can find in lang.yml
       
-      # command /lagfixer clearitems
-      clearitems:
-        enabled: false
+      # command /lagfixer clear items
+      items:
+        enabled: true
+        disable_item_despawn: false # true = plugin will disable the bukkit method of despawning items and items will be removed using WorldCleaner
+        time_lived: 10000 # in milliseconds, required time of the item on the ground to remove (set -1 to disable)
+        blacklist: # skipped items, list of materials: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+          - BEACON
         abyss: # abyss is the place where all deleted items go, and players can get them back by typing the /abyss command
           enabled: false
           alerts: true # you can find in lang.yml
           permission: lagfixer.abyss # set this empty to disable permission
-          menu_size: 54
+          size: 54
           item_despawn: true # true = plugin will listen ItemDespawnEvent and adds to abyss inventory
           close: 30 # clear abyss inventory and disable command
-          blacklist: # list of materials: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+          blacklist: # skipped items in abyss, list of materials: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
             - BEDROCK
             - BEACON
-            - DIAMOND_PICKAXE
       
-      # command /lagfixer killmobs
-      killmobs:
+      # command /lagfixer clear creatures
+      creatures:
         enabled: true
         named: false # should remove named creatures
         drop_items: false # false = kill mobs without drop, true = kill mobs and drop items
         babies: false # true = kill mobs that are baby, this also includes non-whitelisted mobs
-        list: # list of entities: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+        list: # allowed creatures, list of entities: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
           - BAT
           - ZOMBIE
           - SKELETON
@@ -237,18 +260,26 @@ modules:
           - SPIDER
           - PHANTOM
           - SQUID
-          - ZOMBIE_PIGMAN
-          - GHAST
-          - PIGLIN
+      
+      # command /lagfixer clear projectiles (like arrow, snowball) SOON
+      projectiles:
+        enabled: true
+        blacklist: # skipped projectiles, list of entities: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+          - ENDER_PEARL
+          - EXPERIENCE_BOTTLE
+          - FIREBALL
+          - POTION
           - WITHER_SKULL
-  
-  # inspired by -> https://modrinth.com/plugin/fast-leaf-decay (I optimized and added a few things myself)
+  #  - EGG
+  #  - SNOWBALL
+  #  - ARROW
+
+    # inspired by -> https://modrinth.com/plugin/fast-leaf-decay (I optimized and added a few things myself)
   InstantLeafDecay:
     enabled: true
-    worlds:
-    - world
-    - world_the_end
-    - world_nether
+    worlds: # add '*' to list to enable for all worlds
+      - world
+      - world_nether
     values:
       drop_items: true # items should drop when leaves are removed
       tree_distance: 7 # required distance from the tree trunk to remove leaves

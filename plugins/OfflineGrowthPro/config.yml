@@ -65,6 +65,7 @@ mobs-minutes-to-full-growth:
   TADPOLE: 20
   SNIFFER: 40
   CAMEL: 20
+  ARMADILLO: 20
 
   
 # Worlds that OfflineGrowth shouldn't handle
