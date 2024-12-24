@@ -265,6 +265,7 @@ modules:
           - SILVERFISH
           - MAGMA_CUBE
           - DROWNED
+          - ZOMBIE_PIGMAN
       
       # command /lagfixer clear projectiles (like arrow, snowball) SOON
       projectiles:

@@ -5030,6 +5030,7 @@
   },
   "minecraft:husbandry/complete_catalogue": {
     "criteria": {
+      "minecraft:white": "2024-12-24 11:31:16 -0500",
       "minecraft:persian": "2024-07-21 12:38:12 -0400"
     },
     "done": false
