@@ -260,6 +260,11 @@ modules:
           - SPIDER
           - PHANTOM
           - SQUID
+          - HOGLIN
+          - ZOMBIE_PIGLIN
+          - SILVERFISH
+          - MAGMA_CUBE
+          - DROWNED
       
       # command /lagfixer clear projectiles (like arrow, snowball) SOON
       projectiles:

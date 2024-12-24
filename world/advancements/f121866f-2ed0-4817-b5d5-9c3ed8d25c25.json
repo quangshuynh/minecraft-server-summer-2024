@@ -929,6 +929,7 @@
       "minecraft:cave_spider": "2024-07-04 20:03:38 -0400",
       "minecraft:piglin": "2024-06-02 18:13:28 -0400",
       "minecraft:enderman": "2024-06-03 17:24:03 -0400",
+      "minecraft:silverfish": "2024-12-23 21:07:21 -0500",
       "minecraft:magma_cube": "2024-06-03 17:37:48 -0400",
       "minecraft:endermite": "2024-07-04 20:30:54 -0400",
       "minecraft:spider": "2024-06-01 21:09:39 -0400",
@@ -5215,6 +5216,12 @@
   "minecraft:husbandry/fishy_business": {
     "criteria": {
       "salmon": "2024-12-21 23:03:25 -0500"
+    },
+    "done": true
+  },
+  "minecraft:nether/return_to_sender": {
+    "criteria": {
+      "killed_ghast": "2024-12-23 20:51:01 -0500"
     },
     "done": true
   },
