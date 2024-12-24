@@ -275,6 +275,9 @@ modules:
           - FIREBALL
           - POTION
           - WITHER_SKULL
+          - FISHING_HOOK
+          - FISHING_ROD
+          - FISHING_BOBBER
   #  - EGG
   #  - SNOWBALL
   #  - ARROW

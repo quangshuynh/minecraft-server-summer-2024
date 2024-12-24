@@ -1,76 +1,368 @@
-[08:46:40] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 29574313ms or 591486 ticks behind
-[08:47:20] [Server thread/INFO]: Stopping the server
-[08:47:20] [Server thread/INFO]: Stopping server
-[08:47:20] [Server thread/INFO]: [AngelChest] Disabling AngelChest v13.9.0
-[08:47:20] [Server thread/INFO]: [ChatItem] Disabling ChatItem v2.6.2
-[08:47:20] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.28
-[08:47:20] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.21.0-dev+151-f2af952
-[08:47:20] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn v2.21.0-dev+151-f2af952
-[08:47:20] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.6.0-SNAPSHOT
-[08:47:20] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
-[08:47:20] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
-[08:47:20] [Server thread/INFO]: [GSit] Disabling GSit v1.13.0
-[08:47:20] [Server thread/INFO]: [GSit] The plugin was successfully disabled.
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] Disabling LagFixer v1.3.31 (build 95)
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (ErrorsManager) -> Disabling manager...
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (ErrorsManager) -> Disabled manager in 0ms!
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (SupportManager) -> Disabling manager...
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (SupportManager) -> Disabled manager in 0ms!
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (ConfigManager) -> Disabling manager...
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (ConfigManager) -> Disabled manager in 0ms!
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (HookManager) -> Disabling manager...
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (HookManager) -> Disabled manager in 0ms!
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (MetricsManager) -> Disabling manager...
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (MetricsManager) -> Disabled manager in 0ms!
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (UpdaterManager) -> Disabling manager...
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (UpdaterManager) -> Disabled manager in 0ms!
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (ModuleManager) -> Disabling manager...
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module LagMonitor in 0ms.
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module CustomVehicles in 0ms.
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module RedstoneLimiter in 0ms.
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module CustomAi in 0ms.
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module EntityLimiter in 0ms.
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module InstantLeafDecay in 0ms.
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module WorldCleaner in 0ms.
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (ModuleManager) -> Disabled manager in 2ms!
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (CommandManager) -> Disabling manager...
-[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (CommandManager) -> Disabled manager in 0ms!
-[08:47:20] [Server thread/INFO]: [NoEndermanGrief] Disabling NoEndermanGrief v1.14_1.0.9
-[08:47:20] [Server thread/INFO]: [NoEndermanGrief]  v1.14_1.0.9 is DISABLED
-[08:47:20] [Server thread/INFO]: [OfflineGrowthPro] Disabling OfflineGrowthPro v2.0.4
-[08:47:20] [Server thread/INFO]: [VeinMiner] Disabling VeinMiner v2.2.4
-[08:47:20] [Server thread/INFO]: [VeinMiner] Clearing localized data
-[08:47:20] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
-[08:47:20] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[08:47:20] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+151-f2af952
-[08:47:20] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.3-SNAPSHOT (b114-83fbd6e)
-[08:47:20] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.131
-[08:47:20] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[08:47:20] [Server thread/INFO]: [LuckPerms] Closing storage...
-[08:47:20] [Server thread/INFO]: [LuckPerms] Goodbye!
-[08:47:20] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.2.0
-[08:47:20] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
-[08:47:20] [Server thread/INFO]: Saving players
-[08:47:20] [Server thread/INFO]: Saving worlds
-[08:47:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 9 entity chunks, 0 poi chunks in world 'world' in 0.00s
-[08:47:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[08:47:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Saved 1 block chunks, 28 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
-[08:47:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[08:47:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 23 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
-[08:47:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[08:47:20] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[08:47:20] [Server thread/INFO]: Flushing Chunk IO
-[08:47:20] [Server thread/INFO]: Closing Thread Pool
-[08:47:20] [Server thread/INFO]: Closing Server
+[08:50:29] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[08:50:30] [ServerMain/INFO]: Loaded 1175 recipes
+[08:50:30] [ServerMain/INFO]: Loaded 1276 advancements
+[08:50:30] [Server thread/INFO]: Starting minecraft server version 1.20.6
+[08:50:30] [Server thread/INFO]: Loading properties
+[08:50:30] [Server thread/INFO]: This server is running Paper version 1.20.6-151-ver/1.20.6@a4f0f5c (2024-10-30T19:13:22Z) (Implementing API version 1.20.6-R0.1-SNAPSHOT)
+[08:50:31] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[08:50:31] [Server thread/INFO]: Using 4 threads for Netty based IO
+[08:50:31] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[08:50:31] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
+[08:50:32] [Server thread/INFO]: Default game type: SURVIVAL
+[08:50:32] [Server thread/INFO]: Generating keypair
+[08:50:32] [Server thread/INFO]: Starting Minecraft server on *:25565
+[08:50:32] [Server thread/INFO]: Using default channel type
+[08:50:32] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[08:50:32] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[08:50:33] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.2.0
+[08:50:33] [Server thread/INFO]: [ViaVersion] ViaVersion 5.2.0 is now loaded. Registering protocol transformers and injecting...
+[08:50:33] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[08:50:33] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[08:50:34] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.131
+[08:50:34] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.3-SNAPSHOT (b114-83fbd6e)
+[08:50:34] [Server thread/INFO]: [floodgate] Took 600ms to boot Floodgate
+[08:50:34] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.0-dev+151-f2af952
+[08:50:34] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
+[08:50:35] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@6e501229]
+[08:50:35] [Server thread/INFO]: [VeinMiner] Loading server plugin VeinMiner v2.2.4
+[08:50:35] [Server thread/INFO]: [OfflineGrowthPro] Loading server plugin OfflineGrowthPro v2.0.4
+[08:50:35] [Server thread/INFO]: [NoEndermanGrief] Loading server plugin NoEndermanGrief v1.14_1.0.9
+[08:50:35] [Server thread/INFO]: [[38;5;11m⚡[0m] Loading server plugin LagFixer v1.3.31 (build 95)
+[08:50:35] [Server thread/INFO]: [GSit] Loading server plugin GSit v1.13.0
+[08:50:35] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.6.0-SNAPSHOT
+[08:50:35] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[08:50:35] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[08:50:35] [Server thread/INFO]: [EssentialsSpawn] Loading server plugin EssentialsSpawn v2.21.0-dev+151-f2af952
+[08:50:35] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.21.0-dev+151-f2af952
+[08:50:35] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.4.28
+[08:50:35] [Server thread/INFO]: [ChatItem] Loading server plugin ChatItem v2.6.2
+[08:50:35] [Server thread/INFO]: [AngelChest] Loading server plugin AngelChest v13.9.0
+[08:50:36] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[08:50:36] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.131
+[08:50:36] [Server thread/INFO]:         __    
+[08:50:36] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.131
+[08:50:36] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[08:50:36] [Server thread/INFO]: 
+[08:50:36] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[08:50:36] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[08:50:36] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[08:50:36] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[08:50:36] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 637ms)
+[08:50:36] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
+[08:50:36] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[08:50:36] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[08:50:37] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
+[08:50:37] [Server thread/INFO]: Preparing level "world"
+[08:50:38] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[08:50:38] [Server thread/INFO]: Time elapsed: 440 ms
+[08:50:38] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[08:50:39] [Server thread/INFO]: Time elapsed: 216 ms
+[08:50:39] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[08:50:39] [Server thread/INFO]: Time elapsed: 71 ms
+[08:50:39] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.2.0
+[08:50:39] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20.5-1.20.6 (766)
+[08:50:39] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.3-SNAPSHOT (b114-83fbd6e)
+[08:50:39] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.0-dev+151-f2af952
+[08:50:39] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[08:50:39] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[08:50:39] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
+[08:50:39] [Server thread/INFO]: [Essentials] Using locale en_US
+[08:50:40] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[08:50:40] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[08:50:40] [Server thread/WARN]: [Essentials] Detected supported permissions plugin LuckPerms without Vault installed.
+[08:50:40] [Server thread/WARN]: [Essentials] Features such as chat prefixes/suffixes and group-related functionality will not work until you install Vault.
+[08:50:40] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[08:50:40] [Server thread/INFO]: [VeinMiner] Enabling VeinMiner v2.2.4
+[08:50:40] [Server thread/INFO]: [VeinMiner] Loading configuration options to local memory
+[08:50:40] [Server thread/INFO]: [VeinMiner] Added 13 aliases.
+[08:50:40] [Server thread/INFO]: [VeinMiner] Registered category with id "Axe" holding 6 unique items and 26 unique blocks.
+[08:50:40] [Server thread/INFO]: [VeinMiner] Registered category with id "Hoe" holding 6 unique items and 10 unique blocks.
+[08:50:40] [Server thread/INFO]: [VeinMiner] Registered category with id "Pickaxe" holding 7 unique items and 25 unique blocks.
+[08:50:40] [Server thread/INFO]: [VeinMiner] Registered category with id "Shears" holding 1 unique items and 27 unique blocks.
+[08:50:40] [Server thread/INFO]: [VeinMiner] Registered category with id "Shovel" holding 6 unique items and 9 unique blocks.
+[08:50:40] [Server thread/WARN]: [VeinMiner] No block list configured for category with id "Hand"! Is this intentional?
+[08:50:40] [Server thread/INFO]: [VeinMiner] Registered category with id "Hand" holding 0 unique items and 0 unique blocks.
+[08:50:40] [Server thread/INFO]: [VeinMiner] Performing an update check!
+[08:50:40] [Server thread/INFO]: [VeinMiner] Registering commands
+[08:50:40] [Server thread/INFO]: [VeinMiner] Registering events
+[08:50:40] [Server thread/INFO]: [VeinMiner] Vault not found. Economy support suspended
+[08:50:40] [Server thread/INFO]: [VeinMiner] Enabling Plugin Metrics
+[08:50:40] [Server thread/INFO]: [VeinMiner] Thanks for enabling Metrics! The anonymous stats are appreciated
+[08:50:40] [Server thread/INFO]: [OfflineGrowthPro] Enabling OfflineGrowthPro v2.0.4
+[08:50:40] [ForkJoinPool.commonPool-worker-1/INFO]: [VeinMiner] Using SQLITE for persistent storage.
+[08:50:40] [ForkJoinPool.commonPool-worker-1/INFO]: [VeinMiner] You are on the latest version of VeinMiner.
+[08:50:40] [Server thread/INFO]: [NoEndermanGrief] Enabling NoEndermanGrief v1.14_1.0.9
+[08:50:40] [Server thread/INFO]: [NoEndermanGrief] **************************************
+[08:50:40] [Server thread/INFO]: [NoEndermanGrief]  v1.14_1.0.9 Loading...
+[08:50:40] [Server thread/INFO]: [NoEndermanGrief] Server Version: 1.20.6-151-a4f0f5c (MC: 1.20.6)
+[08:50:40] [Server thread/INFO]: [NoEndermanGrief] This is not a DEV version.
+[08:50:40] [Server thread/INFO]: [NoEndermanGrief] Checking lang files...
+[08:50:40] [Server thread/INFO]: [NoEndermanGrief] Checking config file...
+[08:50:40] [Server thread/INFO]: [NoEndermanGrief] plugins\NoEndermanGrief\config.yml
+[08:50:40] [Server thread/INFO]: [NoEndermanGrief] Checking config file version...
+[08:50:40] [Server thread/INFO]: [NoEndermanGrief] Config file version=1.0.6 expected=1.0.6
+[08:50:40] [Server thread/INFO]: [NoEndermanGrief] Checking for updates...
+[08:50:41] [Server thread/INFO]: [NoEndermanGrief] *!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*
+[08:50:41] [Server thread/INFO]: [NoEndermanGrief] * Version is up to date!
+[08:50:41] [Server thread/INFO]: [NoEndermanGrief] * Donate: https://ko-fi.com/joelgodofwar
+[08:50:41] [Server thread/INFO]: [NoEndermanGrief] *!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*
+[08:50:41] [Server thread/INFO]: [NoEndermanGrief]  v1.14_1.0.9 is ENABLED - Loading took 992 ms.
+[08:50:41] [Server thread/INFO]: [[38;5;11m⚡[0m] Enabling LagFixer v1.3.31 (build 95)
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] Remember to leave a rating! ★ ★ ★ ★ ★
+
+
+
+
+
+LagFixer - Best Performance Solution!
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░██╗░░░░░░█████╗░░██████╗░░░███████╗██╗██╗░░██╗███████╗██████╗░░
+░██║░░░░░██╔══██╗██╔════╝░░░██╔════╝██║╚██╗██╔╝██╔════╝██╔══██╗░
+░██║░░░░░███████║██║░░██╗░░░█████╗░░██║░╚███╔╝░█████╗░░██████╔╝░
+░██║░░░░░██╔══██║██║░░╚██╗░░██╔══╝░░██║░██╔██╗░██╔══╝░░██╔══██╗░
+░███████╗██║░░██║╚██████╔╝░░██║░░░░░██║██╔╝╚██╗███████╗██║░░██║░
+░╚══════╝╚═╝░░╚═╝░╚═════╝░░░╚═╝░░░░░╚═╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+
+
+
+
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] (ErrorsManager) -> Enabling manager...
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Started listening for console LagFixer errors!
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] (ErrorsManager) -> Enabled manager in 0ms!
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] (SupportManager) -> Enabling manager...
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Loaded creatures 132 to creature container!
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Loaded items 0 to item container!
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Loaded fork support ~ xyz.lychee.lagfixer.support.Folia
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Loaded nms support ~ xyz.lychee.lagfixer.nms.v1_20_R4.SupportNms
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] (SupportManager) -> Enabled manager in 15ms!
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] (ConfigManager) -> Enabling manager...
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] (ConfigManager) -> Enabled manager in 49ms!
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] (HookManager) -> Enabling manager...
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] (HookManager) -> Enabled manager in 0ms!
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] (MetricsManager) -> Enabling manager...
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] (MetricsManager) -> Enabled manager in 1ms!
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] (UpdaterManager) -> Enabling manager...
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] (UpdaterManager) -> Enabled manager in 2ms!
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] (ModuleManager) -> Enabling manager...
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully loaded module WorldCleaner in 24ms.
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully loaded module CustomVehicles in 5ms.
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully loaded module LagMonitor in 4ms.
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully loaded module EntityLimiter in 4ms.
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully loaded module CustomAi in 12ms.
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully loaded module RedstoneLimiter in 3ms.
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully loaded module InstantLeafDecay in 1ms.
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] (ModuleManager) -> Enabled manager in 54ms!
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] (CommandManager) -> Enabling manager...
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] (CommandManager) -> Enabled manager in 4ms!
+[08:50:42] [Server thread/INFO]: [[38;5;11m⚡[0m] Remember to leave a rating! ★ ★ ★ ★ ★
+[08:50:42] [Server thread/INFO]: [GSit] Enabling GSit v1.13.0
+[08:50:42] [Server thread/INFO]: [GSit] The plugin was successfully enabled.
+[08:50:42] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.6.0-SNAPSHOT
+[08:50:42] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.21.0-dev+151-f2af952
+[08:50:42] [Server thread/INFO]: [EssentialsSpawn] Starting Metrics. Opt-out using the global bStats config.
+[08:50:42] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.21.0-dev+151-f2af952
+[08:50:42] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[08:50:42] [Server thread/INFO]: [Chunky] Enabling Chunky v1.4.28
+[08:50:42] [Server thread/INFO]: [ChatItem] Enabling ChatItem v2.6.2
+[08:50:42] [Server thread/INFO]: [ChatItem] Detected server version: v1_20_6 (Platform: PaperMC)
+[08:50:42] [Server thread/INFO]: [ChatItem] Loading own packet system.
+[08:50:42] [Server thread/INFO]: [ChatItem] Use ComponentBuilder's method.
+[08:50:42] [Server thread/INFO]: [ChatItem] Manager automatically chosen: PacketEditing (packet), ChatListener (chat), Paper (paper), Own Formatter (ownformatter)
+[08:50:42] [Server thread/INFO]: [ChatItem] Load Essentials support.
+[08:50:42] [Server thread/INFO]: [ChatItem] Loaded translation for en_gb.
+[08:50:42] [Server thread/INFO]: [AngelChest] Enabling AngelChest v13.9.0
+[08:50:42] [Server thread/INFO]: [AngelChest] groups.yml does not exist, skipping custom group settings.
+[08:50:42] [Server thread/INFO]: [AngelChest] blacklist.yml does not exist, disabling item blacklist.
+[08:50:42] [Server thread/INFO]: [AngelChest] Not using premium version, disabling Graveyards feature
+[08:50:42] [Server thread/WARN]: [AngelChest] Could not add usage/description to command acopen
+[08:50:42] [Server thread/INFO]: [AngelChest] Vault not installed, disabling economy functions.
+[08:50:42] [Server thread/INFO]: [AngelChest] [ACF] Enabled Asynchronous Tab Completion Support!
+[08:50:42] [Server thread/INFO]: [AngelChest] Successfully enabled AngelChest v13.9.0 (Premium: false)
+[08:50:43] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[08:50:43] [Server thread/INFO]: [Geyser-Spigot] 
+[08:50:43] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.6.0-b734 (git-master-64c7adc)
+[08:50:43] [Server thread/INFO]: [Geyser-Spigot] 
+[08:50:43] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[08:50:45] [Server thread/INFO]: [Geyser-Spigot] Started Geyser on UDP port 25565
+[08:50:45] [Server thread/INFO]: [Geyser-Spigot] Done (2.767s)! Run /geyser help for help!
+[08:50:46] [Server thread/INFO]: Starting GS4 status listener
+[08:50:46] [Server thread/WARN]: Unable to initialise query system on 0.0.0.0:25565
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[?:?]
+	at java.base/sun.nio.ch.DatagramChannelImpl.bindInternal(DatagramChannelImpl.java:1347) ~[?:?]
+	at java.base/sun.nio.ch.DatagramChannelImpl.bind(DatagramChannelImpl.java:1317) ~[?:?]
+	at java.base/sun.nio.ch.DatagramSocketAdaptor.bind(DatagramSocketAdaptor.java:108) ~[?:?]
+	at java.base/java.net.DatagramSocket.createDelegate(DatagramSocket.java:1433) ~[?:?]
+	at java.base/java.net.DatagramSocket.<init>(DatagramSocket.java:328) ~[?:?]
+	at java.base/java.net.DatagramSocket.<init>(DatagramSocket.java:387) ~[?:?]
+	at net.minecraft.server.rcon.thread.QueryThreadGs4.initSocket(QueryThreadGs4.java:320) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at net.minecraft.server.rcon.thread.QueryThreadGs4.start(QueryThreadGs4.java:305) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at net.minecraft.server.rcon.thread.QueryThreadGs4.create(QueryThreadGs4.java:79) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:334) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1136) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+[08:50:46] [Server thread/INFO]: Running delayed init tasks
+[08:50:46] [Craft Scheduler Thread - 0 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[08:50:46] [Craft Scheduler Thread - 2 - Essentials/INFO]: [Essentials] Fetching version information...
+[08:50:46] [Server thread/INFO]: [OfflineGrowthPro] Loaded 4 chunks into memory on first startup
+[08:50:46] [Server thread/INFO]: Done (15.369s)! For help, type "help"
+[08:50:46] [Server thread/INFO]: Timings Reset
+[08:50:48] [Server thread/INFO]: [AngelChest] ========================================================
+[08:50:48] [Server thread/INFO]: [AngelChest] You are using the free version of AngelChest. There is
+[08:50:48] [Server thread/INFO]: [AngelChest] also a premium version available, called AngelChestPlus.
+[08:50:48] [Server thread/INFO]: [AngelChest] It includes TONS of new features and exclusive Discord
+[08:50:48] [Server thread/INFO]: [AngelChest] support. The free version will still receive bugfixes,
+[08:50:48] [Server thread/INFO]: [AngelChest] but there won't be ANY new features!
+[08:50:48] [Server thread/INFO]: [AngelChest] If you like AngelChest, you will LOVE AngelChestPlus, so
+[08:50:48] [Server thread/INFO]: [AngelChest] please consider upgrading! Thank you for using AngelChest.
+[08:50:48] [Server thread/INFO]: [AngelChest] 
+[08:50:48] [Server thread/INFO]: [AngelChest] https://www.spigotmc.org/resources/88214
+[08:50:48] [Server thread/INFO]: [AngelChest] ========================================================
+[08:51:04] [User Authenticator #0/INFO]: UUID of player Hymic is 694565c1-1aca-4a47-8679-6acbc4f975eb
+[08:51:05] [Server thread/INFO]: Hymic joined the game
+[08:51:05] [Server thread/INFO]: Hymic[/127.0.0.1:65046] logged in with entity id 133 at ([world]-2629.4896937823532, 63.0, 4291.053115385737)
+[08:55:01] [Server thread/WARN]: Hymic moved wrongly!
+[09:03:05] [Server thread/INFO]: Hymic issued server command: /j
+[09:06:14] [Server thread/INFO]: Hymic issued server command: /j
+[09:06:19] [Server thread/INFO]: Hymic issued server command: /j
+[09:06:19] [Server thread/WARN]: Hymic moved too quickly! 1.8179328426317625,17.0,0.7083028725146505
+[09:06:34] [Server thread/INFO]: Hymic issued server command: /gmc
+[09:08:40] [Server thread/INFO]: Hymic issued server command: /gms
+[09:11:37] [Server thread/INFO]: Hymic issued server command: /i spruce_wood 1
+[09:12:34] [Server thread/INFO]: Hymic issued server command: /i spruce_wood 5
+[09:13:05] [Server thread/INFO]: Hymic issued server command: /j
+[09:14:29] [Server thread/INFO]: Hymic issued server command: /i torch 5000
+[09:14:57] [Server thread/INFO]: Hymic issued server command: /gmc
+[09:15:03] [Server thread/INFO]: Hymic issued server command: /gms
+[09:17:03] [Server thread/INFO]: Hymic issued server command: /j
+[09:17:03] [Server thread/WARN]: Hymic moved too quickly! -1.651000497689438,15.0,-0.3378564283520973
+[09:17:11] [Server thread/INFO]: Hymic issued server command: /thru
+[09:19:31] [Server thread/INFO]: Hymic issued server command: /fly
+[09:24:31] [Server thread/INFO]: Hymic issued server command: /j
+[09:25:54] [Server thread/INFO]: Hymic issued server command: /i smithing_table 1
+[09:30:10] [Server thread/INFO]: Hymic issued server command: /deop hymic
+[09:30:10] [Server thread/INFO]: [Hymic: Made Hymic no longer a server operator]
+[09:47:35] [Server thread/INFO]: Hymic issued server command: /lagfixer menu
+[09:47:41] [Server thread/INFO]: Made Hymic a server operator
+[09:47:45] [Server thread/INFO]: Hymic issued server command: /lagfixer menu
+[09:47:56] [Server thread/INFO]: Hymic issued server command: /deop hymic
+[09:47:56] [Server thread/INFO]: [Hymic: Made Hymic no longer a server operator]
+[09:52:55] [Server thread/INFO]: Made Hymic a server operator
+[09:52:59] [Server thread/INFO]: Hymic issued server command: /lagfixer menu
+[09:58:50] [Server thread/INFO]: Hymic issued server command: /lagfixer menu
+[09:59:38] [Server thread/INFO]: Hymic issued server command: /deop hymic
+[09:59:38] [Server thread/INFO]: [Hymic: Made Hymic no longer a server operator]
+[10:57:51] [User Authenticator #1/INFO]: UUID of player Azift is 8283ee29-162f-45f6-9509-6399934e9637
+[10:57:52] [Server thread/INFO]: Azift joined the game
+[10:57:52] [Server thread/INFO]: Azift[/172.101.136.84:46621] logged in with entity id 19765 at ([world]1105.1280844954479, -37.0, -2227.053350586593)
+[11:07:26] [Async Chat Thread - #8/INFO]: Azift: um
+[11:07:29] [Async Chat Thread - #8/INFO]: Azift: Quang
+[11:08:55] [Server thread/INFO]: Azift fell from a high place
+[11:11:09] [Server thread/INFO]: Azift has made the advancement [Oh Shiny]
+[11:13:38] [Server thread/INFO]: Stopping the server
+[11:13:38] [Server thread/INFO]: Stopping server
+[11:13:38] [Server thread/INFO]: [AngelChest] Disabling AngelChest v13.9.0
+[11:13:38] [Server thread/ERROR]: Error occurred while disabling AngelChest v13.9.0
+java.lang.ExceptionInInitializerError: null
+	at AngelChest-13.9.0.jar/de.jeff_media.angelchest.AngelChestMain.onDisable(AngelChestMain.java:442) ~[AngelChest-13.9.0.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugins(PaperPluginInstanceManager.java:161) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugins(PaperPluginManagerImpl.java:97) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:541) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.disablePlugins(CraftServer.java:595) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:978) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:842) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1273) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[?:?]
+Caused by: org.bukkit.plugin.IllegalPluginAccessException: Plugin attempted to register task while disabled
+	at org.bukkit.craftbukkit.scheduler.CraftScheduler.validate(CraftScheduler.java:550) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at org.bukkit.craftbukkit.scheduler.CraftScheduler.runTaskTimer(CraftScheduler.java:226) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at org.bukkit.craftbukkit.scheduler.CraftScheduler.runTaskTimer(CraftScheduler.java:211) ~[paper-1.20.6.jar:1.20.6-151-a4f0f5c]
+	at org.bukkit.scheduler.BukkitRunnable.runTaskTimer(BukkitRunnable.java:117) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at AngelChest-13.9.0.jar/de.jeff_media.angelchest.AngelChestMain$$aF.<clinit>(GraveyardListener.java:57) ~[AngelChest-13.9.0.jar:?]
+	... 12 more
+[11:13:38] [Server thread/INFO]: [ChatItem] Disabling ChatItem v2.6.2
+[11:13:38] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.28
+[11:13:38] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.21.0-dev+151-f2af952
+[11:13:38] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn v2.21.0-dev+151-f2af952
+[11:13:38] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.6.0-SNAPSHOT
+[11:13:38] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[11:13:39] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[11:13:39] [Server thread/INFO]: [GSit] Disabling GSit v1.13.0
+[11:13:39] [Server thread/INFO]: [GSit] The plugin was successfully disabled.
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] Disabling LagFixer v1.3.31 (build 95)
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] (ErrorsManager) -> Disabling manager...
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] (ErrorsManager) -> Disabled manager in 0ms!
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] (SupportManager) -> Disabling manager...
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] (SupportManager) -> Disabled manager in 0ms!
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] (ConfigManager) -> Disabling manager...
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] (ConfigManager) -> Disabled manager in 0ms!
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] (HookManager) -> Disabling manager...
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] (HookManager) -> Disabled manager in 0ms!
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] (MetricsManager) -> Disabling manager...
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] (MetricsManager) -> Disabled manager in 0ms!
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] (UpdaterManager) -> Disabling manager...
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] (UpdaterManager) -> Disabled manager in 0ms!
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] (ModuleManager) -> Disabling manager...
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module WorldCleaner in 1ms.
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module CustomVehicles in 0ms.
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module LagMonitor in 0ms.
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module EntityLimiter in 0ms.
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module CustomAi in 0ms.
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module RedstoneLimiter in 0ms.
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module InstantLeafDecay in 1ms.
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] (ModuleManager) -> Disabled manager in 2ms!
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] (CommandManager) -> Disabling manager...
+[11:13:39] [Server thread/INFO]: [[38;5;11m⚡[0m] (CommandManager) -> Disabled manager in 0ms!
+[11:13:39] [Server thread/INFO]: [NoEndermanGrief] Disabling NoEndermanGrief v1.14_1.0.9
+[11:13:39] [Server thread/INFO]: [NoEndermanGrief]  v1.14_1.0.9 is DISABLED
+[11:13:39] [Server thread/INFO]: [OfflineGrowthPro] Disabling OfflineGrowthPro v2.0.4
+[11:13:39] [Server thread/INFO]: [VeinMiner] Disabling VeinMiner v2.2.4
+[11:13:39] [Server thread/INFO]: [VeinMiner] Clearing localized data
+[11:13:39] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
+[11:13:39] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[11:13:39] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+151-f2af952
+[11:13:39] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.3-SNAPSHOT (b114-83fbd6e)
+[11:13:39] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.131
+[11:13:39] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[11:13:39] [Server thread/INFO]: [LuckPerms] Closing storage...
+[11:13:39] [Server thread/INFO]: [LuckPerms] Goodbye!
+[11:13:39] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.2.0
+[11:13:39] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[11:13:39] [Server thread/INFO]: Saving players
+[11:13:39] [WebSocketConnectReadThread-602/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[11:13:39] [Server thread/INFO]: Hymic lost connection: Server closed
+[11:13:39] [Server thread/INFO]: Hymic left the game
+[11:13:39] [Server thread/INFO]: Azift lost connection: Server closed
+[11:13:39] [Server thread/INFO]: Azift left the game
+[11:13:39] [Server thread/INFO]: Saving worlds
+[11:13:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[11:13:39] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[11:13:39] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[11:13:39] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[11:13:39] [Server thread/INFO]: [ChunkHolderManager] Saved 43 block chunks, 313 entity chunks, 2 poi chunks in world 'world' in 0.08s
+[11:13:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[11:13:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[11:13:39] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[11:13:39] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[11:13:39] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[11:13:39] [Server thread/INFO]: [ChunkHolderManager] Saved 108 block chunks, 220 entity chunks, 0 poi chunks in world 'world_nether' in 0.09s
+[11:13:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[11:13:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[11:13:39] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[11:13:39] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[11:13:39] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[11:13:39] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 47 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[11:13:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[11:13:39] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[11:13:39] [Server thread/INFO]: Flushing Chunk IO
+[11:13:39] [Server thread/INFO]: Closing Thread Pool
+[11:13:39] [Server thread/INFO]: Closing Server

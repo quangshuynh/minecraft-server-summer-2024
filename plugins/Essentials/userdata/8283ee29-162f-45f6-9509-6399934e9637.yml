@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1734990300106
-  login: 1734986353638
+  logout: 1735056819053
+  login: 1735055872099
 money: '0'
 last-account-name: Azift
 logoutlocation:
-  world: ab0fadff-60ab-430f-b890-e8b58df931dd
-  world-name: world
-  x: 1105.1280844954479
-  y: -37.0
-  z: -2227.053350586593
-  yaw: -17.322998046875
-  pitch: 7.336674690246582
+  world: d6a4e861-bd37-407a-9327-fb54cd90136e
+  world-name: world_nether
+  x: 31.19786204831072
+  y: 43.0
+  z: -136.75320166078689
+  yaw: 166.49404907226562
+  pitch: 48.230464935302734
