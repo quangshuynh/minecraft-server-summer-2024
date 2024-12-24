@@ -1,0 +1,76 @@
+[08:46:40] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 29574313ms or 591486 ticks behind
+[08:47:20] [Server thread/INFO]: Stopping the server
+[08:47:20] [Server thread/INFO]: Stopping server
+[08:47:20] [Server thread/INFO]: [AngelChest] Disabling AngelChest v13.9.0
+[08:47:20] [Server thread/INFO]: [ChatItem] Disabling ChatItem v2.6.2
+[08:47:20] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.28
+[08:47:20] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.21.0-dev+151-f2af952
+[08:47:20] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn v2.21.0-dev+151-f2af952
+[08:47:20] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.6.0-SNAPSHOT
+[08:47:20] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[08:47:20] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[08:47:20] [Server thread/INFO]: [GSit] Disabling GSit v1.13.0
+[08:47:20] [Server thread/INFO]: [GSit] The plugin was successfully disabled.
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] Disabling LagFixer v1.3.31 (build 95)
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (ErrorsManager) -> Disabling manager...
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (ErrorsManager) -> Disabled manager in 0ms!
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (SupportManager) -> Disabling manager...
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (SupportManager) -> Disabled manager in 0ms!
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (ConfigManager) -> Disabling manager...
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (ConfigManager) -> Disabled manager in 0ms!
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (HookManager) -> Disabling manager...
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (HookManager) -> Disabled manager in 0ms!
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (MetricsManager) -> Disabling manager...
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (MetricsManager) -> Disabled manager in 0ms!
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (UpdaterManager) -> Disabling manager...
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (UpdaterManager) -> Disabled manager in 0ms!
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (ModuleManager) -> Disabling manager...
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module LagMonitor in 0ms.
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module CustomVehicles in 0ms.
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module RedstoneLimiter in 0ms.
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module CustomAi in 0ms.
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module EntityLimiter in 0ms.
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module InstantLeafDecay in 0ms.
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m]  • Sucessfully disabled module WorldCleaner in 0ms.
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (ModuleManager) -> Disabled manager in 2ms!
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (CommandManager) -> Disabling manager...
+[08:47:20] [Server thread/INFO]: [[38;5;11m⚡[0m] (CommandManager) -> Disabled manager in 0ms!
+[08:47:20] [Server thread/INFO]: [NoEndermanGrief] Disabling NoEndermanGrief v1.14_1.0.9
+[08:47:20] [Server thread/INFO]: [NoEndermanGrief]  v1.14_1.0.9 is DISABLED
+[08:47:20] [Server thread/INFO]: [OfflineGrowthPro] Disabling OfflineGrowthPro v2.0.4
+[08:47:20] [Server thread/INFO]: [VeinMiner] Disabling VeinMiner v2.2.4
+[08:47:20] [Server thread/INFO]: [VeinMiner] Clearing localized data
+[08:47:20] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
+[08:47:20] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[08:47:20] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+151-f2af952
+[08:47:20] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.3-SNAPSHOT (b114-83fbd6e)
+[08:47:20] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.131
+[08:47:20] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[08:47:20] [Server thread/INFO]: [LuckPerms] Closing storage...
+[08:47:20] [Server thread/INFO]: [LuckPerms] Goodbye!
+[08:47:20] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.2.0
+[08:47:20] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[08:47:20] [Server thread/INFO]: Saving players
+[08:47:20] [Server thread/INFO]: Saving worlds
+[08:47:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 9 entity chunks, 0 poi chunks in world 'world' in 0.00s
+[08:47:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[08:47:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Saved 1 block chunks, 28 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
+[08:47:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[08:47:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[08:47:20] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 23 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
+[08:47:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[08:47:20] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[08:47:20] [Server thread/INFO]: Flushing Chunk IO
+[08:47:20] [Server thread/INFO]: Closing Thread Pool
+[08:47:20] [Server thread/INFO]: Closing Server
